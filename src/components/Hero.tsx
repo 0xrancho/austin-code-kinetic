@@ -6,21 +6,65 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden" id="hero">
-      {/* Hero specific brand element - centered starry circle */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] opacity-10 pointer-events-none">
+      {/* Hero specific brand element - centered starry circle with zero opacity background */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] opacity-40 pointer-events-none">
         <svg width="100%" height="100%" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="250" cy="250" r="240" fill="black" />
+          <circle cx="250" cy="250" r="240" fill="transparent" />
           <circle cx="250" cy="250" r="239" stroke="white" strokeWidth="2" fill="none" />
-          {/* Stars in the circle */}
+          {/* Stars in the circle - now more visible */}
           {Array.from({ length: 100 }).map((_, i) => {
             const x = 250 + (Math.random() - 0.5) * 460;
             const y = 250 + (Math.random() - 0.5) * 460;
-            const size = Math.random() * 1.5;
+            const size = Math.random() * 2;
             return (
               <circle key={i} cx={x} cy={y} r={size} fill="white" />
             );
           })}
         </svg>
+      </div>
+      
+      {/* New graphic element - top left */}
+      <div className="absolute top-[5%] left-[5%] w-[300px] h-[300px] opacity-60 pointer-events-none">
+        <svg width="100%" height="100%" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="150" cy="150" r="120" stroke="white" strokeWidth="1" strokeOpacity="0.7" fill="none" />
+          <circle cx="150" cy="150" r="80" stroke="white" strokeWidth="1" strokeOpacity="0.5" fill="none" />
+          <circle cx="150" cy="150" r="40" stroke="white" strokeWidth="1" strokeOpacity="0.3" fill="none" />
+          <line x1="30" y1="150" x2="270" y2="150" stroke="white" strokeWidth="0.5" strokeOpacity="0.4" strokeDasharray="5 5" />
+          <line x1="150" y1="30" x2="150" y2="270" stroke="white" strokeWidth="0.5" strokeOpacity="0.4" strokeDasharray="5 5" />
+          <path d="M150 30 A120 120 0 0 1 270 150 L150 150 Z" fill="url(#gradient1)" fillOpacity="0.3" />
+          <defs>
+            <linearGradient id="gradient1" x1="150" y1="30" x2="210" y2="150" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stopColor="#00D1FF" />
+              <stop offset="1" stopColor="#3F00FF" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      
+      {/* New graphic element - bottom right */}
+      <div className="absolute bottom-[5%] right-[5%] w-[350px] h-[350px] opacity-60 pointer-events-none">
+        <svg width="100%" height="100%" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="50" y="50" width="250" height="250" stroke="white" strokeWidth="1" strokeOpacity="0.6" fill="none" />
+          <rect x="100" y="100" width="150" height="150" stroke="white" strokeWidth="1" strokeOpacity="0.4" fill="none" />
+          <line x1="50" y1="50" x2="300" y2="300" stroke="white" strokeWidth="0.5" strokeOpacity="0.5" />
+          <line x1="300" y1="50" x2="50" y2="300" stroke="white" strokeWidth="0.5" strokeOpacity="0.5" />
+          <circle cx="175" cy="175" r="50" fill="url(#gradient2)" fillOpacity="0.4" />
+          <defs>
+            <linearGradient id="gradient2" x1="125" y1="175" x2="225" y2="175" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stopColor="#FF4C4C" />
+              <stop offset="1" stopColor="#FFC53D" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      
+      {/* Grid overlay - made more visible */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none opacity-20" 
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), 
+                           linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)`,
+          backgroundSize: '20px 20px'
+        }}>
       </div>
       
       <div className="container mx-auto px-4 pt-20 pb-24 relative z-10">

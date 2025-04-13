@@ -61,6 +61,13 @@
   background-size: 40px 40px;
 }
 
+.texture-bg {
+  background-image: url('/lovable-uploads/7d3650ff-ed1f-43ed-8785-379c3e1ea332.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .section-fade {
   position: relative;
 }
