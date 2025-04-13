@@ -34,8 +34,13 @@ const Hero = () => {
           
           <div className="flex justify-center flex-wrap gap-4 mt-10 animate-fade-in" style={{ animationDelay: "0.5s" }}>
             <Button 
-              className="gap-2 bg-white text-black hover:bg-white/90"
+              className="gap-2 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_18px_rgba(63,0,255,0.6)]"
               size="lg"
+              style={{
+                background: 'linear-gradient(135deg, #00D1FF, #3F00FF)',
+                borderRadius: '6px',
+                boxShadow: '0 0 12px rgba(63, 0, 255, 0.4)'
+              }}
               asChild
             >
               <a 
