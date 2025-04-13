@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { ArrowDownIcon, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -63,9 +62,7 @@ const Hero = () => {
           <h2 className="text-xl md:text-2xl lg:text-3xl font-space-grotesk font-light text-white/80 mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             Father of 5 | AI Enablement | RevOps
           </h2>
-          <h3 className="text-lg md:text-xl lg:text-2xl font-space-grotesk font-medium text-white/90 mb-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            Strategic Operator for Redemptive Ventures
-          </h3>
+          
           <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             I design and implement high-leverage ops systems for mission-driven businesses, family offices, and nonprofits.
           </p>
@@ -87,7 +84,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <Calendar className="h-4 w-4" />
-                Hire Me
+                1:1 Call
               </a>
             </Button>
             <Button 
