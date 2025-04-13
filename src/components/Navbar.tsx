@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +18,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Links', href: '#links' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: '/#about' },
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'Links', href: '/#links' },
+    { name: 'Contact', href: '/#contact' },
+    { name: 'Inspiration', href: '/inspiration' },
   ];
 
   return (
@@ -29,20 +31,29 @@ const Navbar = () => {
       scrolled ? "bg-background/80 backdrop-blur-lg border-b border-white/10" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#" className="text-xl font-space-grotesk font-bold tracking-tight">
+        <Link to="/" className="text-xl font-space-grotesk font-bold tracking-tight">
           Joel A. Austin
-        </a>
+        </Link>
         
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a 
-                href={link.href}
-                className="text-white/80 hover:text-white transition-colors duration-200 font-inter text-sm"
-              >
-                {link.name}
-              </a>
+              {link.href.startsWith('/') ? (
+                <Link 
+                  to={link.href}
+                  className="text-white/80 hover:text-white transition-colors duration-200 font-inter text-sm"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <a 
+                  href={link.href}
+                  className="text-white/80 hover:text-white transition-colors duration-200 font-inter text-sm"
+                >
+                  {link.name}
+                </a>
+              )}
             </li>
           ))}
         </ul>
@@ -64,13 +75,23 @@ const Navbar = () => {
             <ul className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href}
-                    className="block py-2 text-white/80 hover:text-white transition-colors duration-200 font-inter"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.name}
-                  </a>
+                  {link.href.startsWith('/') ? (
+                    <Link 
+                      to={link.href}
+                      className="block py-2 text-white/80 hover:text-white transition-colors duration-200 font-inter"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a 
+                      href={link.href}
+                      className="block py-2 text-white/80 hover:text-white transition-colors duration-200 font-inter"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

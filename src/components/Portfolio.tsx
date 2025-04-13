@@ -49,7 +49,7 @@ const Portfolio = () => {
       {/* Background image with overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/lovable-uploads/1d7e2d4a-ab75-4d48-89d1-b34a6c9e58b3.png')" }}
+        style={{ backgroundImage: "url('/lovable-uploads/da52dcfb-4cc2-4ea6-bf87-c6c5761b07e2.png')" }}
       >
         <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
       </div>
