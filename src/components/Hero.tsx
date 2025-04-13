@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="flex justify-center mb-6 animate-fade-in">
             <Avatar className="w-36 h-36 border-4 border-white/20">
               <AvatarImage 
-                src="/lovable-uploads/79e2f7a0-cfbb-400a-b3f0-17d8b1290202.png" 
+                src="/lovable-uploads/1d7e2d4a-ab75-4d48-89d1-b34a6c9e58b3.png" 
                 alt="Joel A. Austin" 
                 className="object-cover"
               />
