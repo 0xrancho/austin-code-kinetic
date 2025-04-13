@@ -1,4 +1,3 @@
-
 import { ArrowDownIcon, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -6,8 +5,8 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center pt-20 pb-10 relative" id="hero">
-      <div className="container mx-auto px-6 py-16 relative z-10">
-        <div className="content-box max-w-4xl mx-auto p-12 md:p-16">
+      <div className="w-full py-16 relative z-10">
+        <div className="content-box w-full mx-auto p-12 md:p-16">
           <div className="flex justify-center mb-8">
             <Avatar className="w-32 h-32 border-4 border-white/20">
               <AvatarImage 

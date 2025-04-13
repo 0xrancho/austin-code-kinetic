@@ -17,7 +17,7 @@ const Index = () => {
       {/* Content */}
       <Navbar />
       
-      <main className="mx-auto relative z-10">
+      <main className="relative z-10">
         <Hero />
         <About />
         <Portfolio />

@@ -1,4 +1,3 @@
-
 import { Briefcase, Database, Clock, Award, BarChart3 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -45,8 +44,8 @@ const portfolioItems: PortfolioItem[] = [
 const Portfolio = () => {
   return (
     <section id="portfolio" className="py-20 relative">
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="content-box max-w-6xl mx-auto p-12 md:p-16">
+      <div className="w-full relative z-10">
+        <div className="content-box w-full mx-auto p-12 md:p-16">
           <h2 className="section-title">
             Selected Work
           </h2>

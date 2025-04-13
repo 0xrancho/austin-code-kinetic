@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Mail, Smartphone, MapPin, Send } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
@@ -39,9 +38,9 @@ const Contact = () => {
   };
   
   return (
-    <section id="contact" className="py-20 relative geometric-bg">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+    <section id="contact" className="py-20 relative">
+      <div className="w-full px-0">
+        <div className="content-box w-full mx-auto p-12 md:p-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 after:content-[''] after:block after:w-16 after:h-1 after:bg-white/20 after:mt-4">
             Get In Touch
           </h2>
