@@ -26,9 +26,9 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground relative">
+    <div className="flex flex-col min-h-screen bg-background text-foreground relative overflow-hidden">
       {/* Vibrant Graphics Layer - appears underneath when "peeled back" */}
-      <div className="fixed inset-0 w-full h-full pointer-events-none z-0" aria-hidden="true">
+      <div className="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-50" aria-hidden="true">
         {/* Main blob in center */}
         <div 
           className="absolute top-1/2 left-1/2 w-[800px] h-[800px] -translate-x-1/2 -translate-y-1/2"
@@ -81,13 +81,13 @@ const Index = () => {
       </div>
       
       {/* Glowing energy pulse circles */}
-      <div className="fixed inset-0 w-full h-full pointer-events-none z-0" aria-hidden="true">
+      <div className="fixed inset-0 w-full h-full pointer-events-none z-1 opacity-80" aria-hidden="true">
         {/* Circle 1 - bottom left */}
         <div 
           className="absolute bottom-[10%] left-[15%] w-[400px] h-[400px] rounded-full"
           style={{
             background: 'radial-gradient(circle at center, rgba(0, 209, 255, 0.15) 0%, rgba(0, 209, 255, 0.08) 40%, rgba(0, 209, 255, 0.03) 70%, transparent 100%)',
-            opacity: '0.04',
+            opacity: '0.15',
             animation: 'pulse1 12s infinite ease-in-out',
           }}
         ></div>
@@ -97,7 +97,7 @@ const Index = () => {
           className="absolute top-[20%] right-[10%] w-[350px] h-[350px] rounded-full"
           style={{
             background: 'radial-gradient(circle at center, rgba(63, 0, 255, 0.15) 0%, rgba(63, 0, 255, 0.08) 40%, rgba(63, 0, 255, 0.03) 70%, transparent 100%)',
-            opacity: '0.03',
+            opacity: '0.12',
             animation: 'pulse2 15s infinite ease-in-out',
           }}
         ></div>
@@ -107,7 +107,7 @@ const Index = () => {
           className="absolute top-[45%] left-[40%] w-[500px] h-[500px] rounded-full"
           style={{
             background: 'radial-gradient(circle at center, rgba(155, 135, 245, 0.15) 0%, rgba(155, 135, 245, 0.08) 40%, rgba(155, 135, 245, 0.03) 70%, transparent 100%)',
-            opacity: '0.035',
+            opacity: '0.14',
             animation: 'pulse3 14s infinite ease-in-out',
           }}
         ></div>
@@ -117,7 +117,7 @@ const Index = () => {
           className="absolute bottom-[25%] right-[25%] w-[450px] h-[450px] rounded-full"
           style={{
             background: 'radial-gradient(circle at center, rgba(0, 209, 255, 0.15) 0%, rgba(63, 0, 255, 0.08) 40%, rgba(63, 0, 255, 0.03) 70%, transparent 100%)',
-            opacity: '0.05',
+            opacity: '0.16',
             animation: 'pulse4 13s infinite ease-in-out',
           }}
         ></div>
@@ -125,26 +125,26 @@ const Index = () => {
       
       {/* Diagonal light shaft/beam */}
       <div 
-        className="fixed inset-0 w-full h-[200vh] pointer-events-none z-1" 
+        className="fixed inset-0 w-full h-[200vh] pointer-events-none z-2" 
         aria-hidden="true"
         style={{
-          background: 'linear-gradient(135deg, rgba(0, 209, 255, 0.05) 0%, transparent 60%)',
-          opacity: '0.05',
+          background: 'linear-gradient(135deg, rgba(0, 209, 255, 0.12) 0%, transparent 60%)',
+          opacity: '0.15',
           mixBlendMode: 'screen',
           transform: `translateY(${beamPosition}%)`,
           transition: 'transform 0.1s linear'
         }}
       ></div>
       
-      {/* Dark overlay to maintain 80% black matte background */}
+      {/* Dark overlay to maintain 80% black matte background - lowered opacity */}
       <div 
-        className="fixed inset-0 w-full h-full pointer-events-none z-1 bg-black opacity-80"
+        className="fixed inset-0 w-full h-full pointer-events-none z-3 bg-black opacity-60"
         aria-hidden="true"
       ></div>
       
       {/* Fixed Background Pattern Layer */}
       <div 
-        className="fixed inset-0 w-full h-full pointer-events-none z-2 opacity-[0.07]"
+        className="fixed inset-0 w-full h-full pointer-events-none z-4 opacity-[0.07]"
         style={{
           backgroundImage: `radial-gradient(circle, #6666FF 1px, transparent 1px)`,
           backgroundSize: '40px 40px',
