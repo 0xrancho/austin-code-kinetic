@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { ArrowDownIcon, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -30,7 +31,7 @@ const Hero = () => {
   }, []);
   
   return (
-    <section className="min-h-screen flex flex-col justify-center relative geometric-bg overflow-hidden" id="hero">
+    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden" id="hero">
       <div className="container mx-auto px-4 pt-20 pb-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6 animate-fade-in">
@@ -109,8 +110,8 @@ const Hero = () => {
       </div>
       
       {/* Gradient overlays */}
-      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-background to-transparent"></div>
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-background to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent z-10"></div>
       
       {/* Geometric shapes */}
       <div className="absolute top-1/4 left-[10%] w-64 h-64 rounded-full bg-white/2 blur-3xl"></div>
