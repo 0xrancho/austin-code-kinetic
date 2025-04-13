@@ -1,4 +1,3 @@
-
 import { ArrowDownIcon, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -24,7 +23,7 @@ const Hero = () => {
           </h1>
           
           <h2 className="text-xl md:text-2xl lg:text-3xl font-space-grotesk font-light text-white/80 mb-8">
-            Father of 5 | AI Enablement | RevOps
+            Father of 5 | Revenue Operations | AI Enablement
           </h2>
           
           <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-12">
