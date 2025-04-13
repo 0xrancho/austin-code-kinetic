@@ -1,12 +1,24 @@
 
 import { ArrowDownIcon, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center relative geometric-bg overflow-hidden" id="hero">
       <div className="container mx-auto px-4 pt-20 pb-24 relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="flex justify-center mb-6 animate-fade-in">
+            <Avatar className="w-36 h-36 border-4 border-white/20">
+              <AvatarImage 
+                src="/lovable-uploads/79e2f7a0-cfbb-400a-b3f0-17d8b1290202.png" 
+                alt="Joel A. Austin" 
+                className="object-cover"
+              />
+              <AvatarFallback>JA</AvatarFallback>
+            </Avatar>
+          </div>
+          
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
             Joel A. Austin
           </h1>
@@ -16,11 +28,11 @@ const Hero = () => {
           <h3 className="text-lg md:text-xl lg:text-2xl font-space-grotesk font-medium text-white/90 mb-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             Strategic Operator for Redemptive Ventures
           </h3>
-          <p className="text-base md:text-lg text-white/70 max-w-2xl mb-10 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             I design and implement high-leverage ops systems for mission-driven businesses, family offices, and nonprofits.
           </p>
           
-          <div className="flex flex-wrap gap-4 mt-10 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+          <div className="flex justify-center flex-wrap gap-4 mt-10 animate-fade-in" style={{ animationDelay: "0.5s" }}>
             <Button 
               className="gap-2 bg-white text-black hover:bg-white/90"
               size="lg"
