@@ -2,7 +2,7 @@ import { Code, FileText, User } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="py-20 relative about-bg">
       {/* Only keeping the geometric grid overlay, no black background */}
       <div className="absolute inset-0 geometric-bg opacity-35 pointer-events-none"></div>
       
