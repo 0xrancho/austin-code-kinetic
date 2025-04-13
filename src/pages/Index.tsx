@@ -207,11 +207,11 @@ const Index = () => {
         }}
       ></div>
       
-      {/* Fixed Background Pattern Layer - removed black overlay to let texture show */}
+      {/* Fixed Background Pattern Layer - changed to dark dots to contrast with beige */}
       <div 
         className="fixed inset-0 w-full h-full pointer-events-none z-5 opacity-[0.07]"
         style={{
-          backgroundImage: `radial-gradient(circle, #6666FF 1px, transparent 1px)`,
+          backgroundImage: `radial-gradient(circle, #333333 1px, transparent 1px)`,
           backgroundSize: '40px 40px',
           backgroundPosition: 'center center',
         }}

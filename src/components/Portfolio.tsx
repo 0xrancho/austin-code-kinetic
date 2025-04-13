@@ -56,7 +56,7 @@ const Portfolio = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 after:content-[''] after:block after:w-16 after:h-1 after:bg-white/20 after:mt-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white after:content-[''] after:block after:w-16 after:h-1 after:bg-white/20 after:mt-4">
             Selected Work
           </h2>
           
