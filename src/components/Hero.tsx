@@ -6,6 +6,23 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden" id="hero">
+      {/* Hero specific brand element - centered starry circle */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] opacity-10 pointer-events-none">
+        <svg width="100%" height="100%" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="250" cy="250" r="240" fill="black" />
+          <circle cx="250" cy="250" r="239" stroke="white" strokeWidth="2" fill="none" />
+          {/* Stars in the circle */}
+          {Array.from({ length: 100 }).map((_, i) => {
+            const x = 250 + (Math.random() - 0.5) * 460;
+            const y = 250 + (Math.random() - 0.5) * 460;
+            const size = Math.random() * 1.5;
+            return (
+              <circle key={i} cx={x} cy={y} r={size} fill="white" />
+            );
+          })}
+        </svg>
+      </div>
+      
       <div className="container mx-auto px-4 pt-20 pb-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6 animate-fade-in">

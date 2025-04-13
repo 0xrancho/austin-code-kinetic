@@ -136,3 +136,25 @@
     opacity: 0.14;
   }
 }
+
+/* Starfield animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.brand-element-starfield circle {
+  animation: twinkle 5s infinite;
+  animation-delay: calc(var(--delay) * 1s);
+}
+
+/* Rotating elements animation */
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.brand-element-rotate {
+  animation: rotate-slow 45s linear infinite;
+  transform-origin: center center;
+}
