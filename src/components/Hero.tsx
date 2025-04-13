@@ -1,3 +1,4 @@
+
 import { ArrowDownIcon, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -5,6 +6,9 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden" id="hero">
+      {/* Pure black background */}
+      <div className="absolute inset-0 bg-black pointer-events-none"></div>
+      
       {/* New graphic element - top left */}
       <div className="absolute top-[5%] left-[5%] w-[300px] h-[300px] opacity-60 pointer-events-none">
         <svg width="100%" height="100%" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,8 +120,8 @@ const Hero = () => {
       </div>
       
       {/* Gradient overlays */}
-      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-background to-transparent z-10"></div>
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent z-10"></div>
+      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-black to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent z-10"></div>
       
       {/* Geometric shapes */}
       <div className="absolute top-1/4 left-[10%] w-64 h-64 rounded-full bg-white/2 blur-3xl"></div>

@@ -26,7 +26,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground relative overflow-hidden">
+    <div className="flex flex-col min-h-screen relative overflow-hidden texture-bg">
       {/* Brand Elements Layer */}
       <div className="fixed inset-0 w-full h-full pointer-events-none z-0" aria-hidden="true">
         {/* Half circle and cone element - top left */}
@@ -207,13 +207,7 @@ const Index = () => {
         }}
       ></div>
       
-      {/* Dark overlay to maintain 80% black matte background - lowered opacity */}
-      <div 
-        className="fixed inset-0 w-full h-full pointer-events-none z-4 bg-black opacity-50"
-        aria-hidden="true"
-      ></div>
-      
-      {/* Fixed Background Pattern Layer */}
+      {/* Fixed Background Pattern Layer - removed black overlay to let texture show */}
       <div 
         className="fixed inset-0 w-full h-full pointer-events-none z-5 opacity-[0.07]"
         style={{
