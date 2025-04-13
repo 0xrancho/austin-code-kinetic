@@ -10,17 +10,21 @@ import MainBackground from "../components/background/MainBackground";
 
 const Index = () => {
   return (
-    <div className="flex flex-col min-h-screen relative overflow-hidden texture-bg">
-      {/* Background visual elements */}
+    <div className="min-h-screen relative">
+      {/* Background */}
       <MainBackground />
       
       {/* Content */}
       <Navbar />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Links />
-      <Contact />
+      
+      <main className="mx-auto relative z-10">
+        <Hero />
+        <About />
+        <Portfolio />
+        <Links />
+        <Contact />
+      </main>
+      
       <Footer />
     </div>
   );

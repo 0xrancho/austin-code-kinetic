@@ -27,11 +27,11 @@ const Navbar = () => {
 
   return (
     <nav className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      scrolled ? "bg-background/80 backdrop-blur-lg border-b border-white/10" : "bg-transparent"
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black shadow-lg",
+      scrolled ? "py-3" : "py-5"
     )}>
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="text-xl font-space-grotesk font-bold tracking-tight">
+      <div className="container mx-auto px-6 flex justify-between items-center">
+        <Link to="/" className="text-xl font-space-grotesk font-bold tracking-tight text-white">
           Joel A. Austin
         </Link>
         
@@ -42,14 +42,14 @@ const Navbar = () => {
               {link.href.startsWith('/') ? (
                 <Link 
                   to={link.href}
-                  className="text-white/80 hover:text-white transition-colors duration-200 font-inter text-sm"
+                  className="text-white/80 hover:text-white transition-colors duration-200 font-inter text-sm uppercase tracking-wide"
                 >
                   {link.name}
                 </Link>
               ) : (
                 <a 
                   href={link.href}
-                  className="text-white/80 hover:text-white transition-colors duration-200 font-inter text-sm"
+                  className="text-white/80 hover:text-white transition-colors duration-200 font-inter text-sm uppercase tracking-wide"
                 >
                   {link.name}
                 </a>
@@ -70,15 +70,15 @@ const Navbar = () => {
       
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-white/10">
-          <div className="container mx-auto px-4 py-4">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-black border-t border-white/10">
+          <div className="container mx-auto px-6 py-4">
             <ul className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   {link.href.startsWith('/') ? (
                     <Link 
                       to={link.href}
-                      className="block py-2 text-white/80 hover:text-white transition-colors duration-200 font-inter"
+                      className="block py-2 text-white/80 hover:text-white transition-colors duration-200 font-inter uppercase tracking-wide"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}
@@ -86,7 +86,7 @@ const Navbar = () => {
                   ) : (
                     <a 
                       href={link.href}
-                      className="block py-2 text-white/80 hover:text-white transition-colors duration-200 font-inter"
+                      className="block py-2 text-white/80 hover:text-white transition-colors duration-200 font-inter uppercase tracking-wide"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}

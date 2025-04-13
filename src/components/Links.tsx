@@ -43,10 +43,10 @@ const links: LinkItem[] = [
 
 const Links = () => {
   return (
-    <section id="links" className="py-20 relative geometric-bg">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 after:content-[''] after:block after:w-16 after:h-1 after:bg-white/20 after:mt-4">
+    <section id="links" className="py-20 relative">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="content-box max-w-4xl mx-auto p-12 md:p-16">
+          <h2 className="section-title">
             Connect With Me
           </h2>
           
@@ -57,7 +57,7 @@ const Links = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center p-6 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors duration-300"
+                className="flex items-center p-6 bg-black/80 border border-white/20 rounded-lg hover:bg-black/90 transition-all duration-300 transform hover:-translate-y-1"
               >
                 <div className="flex-shrink-0 mr-4 bg-white/10 rounded-full p-3">
                   {link.icon}

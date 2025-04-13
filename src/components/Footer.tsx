@@ -5,14 +5,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="py-10 border-t border-white/10 geometric-bg relative overflow-hidden">
+    <footer className="py-10 bg-black text-white relative overflow-hidden">
       {/* Footer specific brand element */}
       <div className="absolute inset-0 w-full h-full pointer-events-none opacity-10">
         <svg width="100%" height="100%" viewBox="0 0 1200 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
           <path d="M0 100 L1200 100" stroke="white" strokeWidth="0.5" strokeDasharray="10 5" />
           <path d="M600 0 L600 200" stroke="white" strokeWidth="0.5" strokeDasharray="10 5" />
           
-          {/* Left circle with grid */}
+          {/* Brand elements from inspiration image */}
           <circle cx="300" cy="100" r="70" fill="black" />
           <circle cx="300" cy="100" r="69" stroke="white" strokeWidth="1" fill="none" />
           <path d="M300 30 L300 170" stroke="white" strokeWidth="0.5" strokeDasharray="5 5" />
@@ -30,7 +30,7 @@ const Footer = () => {
         </svg>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-space-grotesk font-bold">Joel A. Austin</h3>
