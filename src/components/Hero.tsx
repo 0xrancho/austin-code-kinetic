@@ -1,35 +1,9 @@
 
-import { useEffect, useState } from 'react';
 import { ArrowDownIcon, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
-  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(true);
-  
-  const phrases = [
-    "Operator. Builder. Believer.",
-    "From chaos to clarity.",
-    "I build high-trust operating systems."
-  ];
-  
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      // Start fade out
-      setIsVisible(false);
-      
-      // Change phrase after fade out and start fade in
-      setTimeout(() => {
-        setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-        setIsVisible(true);
-      }, 500); // Half a second for fade out
-      
-    }, 3000); // Change every 3 seconds
-    
-    return () => clearInterval(intervalId);
-  }, []);
-  
   return (
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden" id="hero">
       <div className="container mx-auto px-4 pt-20 pb-24 relative z-10">
@@ -45,20 +19,9 @@ const Hero = () => {
             </Avatar>
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-3 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
             Joel A. Austin
           </h1>
-          
-          <div 
-            className="text-lg md:text-xl lg:text-2xl font-space-grotesk font-light text-white/90 mb-4"
-            style={{ 
-              transition: 'opacity 0.5s ease',
-              opacity: isVisible ? 1 : 0,
-              height: '2.5rem'
-            }}
-          >
-            {phrases[currentPhraseIndex]}
-          </div>
           
           <h2 className="text-xl md:text-2xl lg:text-3xl font-space-grotesk font-light text-white/80 mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             Father of 5 | AI Enablement | RevOps
