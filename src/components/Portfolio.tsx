@@ -1,117 +1,82 @@
 
 import { useState } from 'react';
-import { ExternalLink } from 'lucide-react';
+import { Briefcase, Database, Clock, Award, BarChart3 } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-interface Project {
+interface PortfolioItem {
   id: number;
   title: string;
-  category: string;
   description: string;
-  image: string;
-  link: string;
+  icon: React.ReactNode;
 }
 
-const projects: Project[] = [
+const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "AI Integration Platform",
-    category: "AI Enablement",
-    description: "Enterprise solution for seamless AI integration across business functions.",
-    image: "https://via.placeholder.com/600x400/1a1a1a/666666",
-    link: "#"
+    title: "Salesforce for Nonprofits",
+    description: "From client intake to outcomes reporting—fast, lean builds that deliver value from day one.",
+    icon: <Database className="h-6 w-6" />
   },
   {
     id: 2,
-    title: "RevOps Dashboard",
-    category: "RevOps",
-    description: "Custom dashboard for tracking and optimizing revenue operations metrics.",
-    image: "https://via.placeholder.com/600x400/1a1a1a/666666",
-    link: "#"
+    title: "Digital Treasury",
+    description: "Helped global NGOs adopt stablecoins, improve FX transparency, and launch secure self-custody.",
+    icon: <Clock className="h-6 w-6" />
   },
   {
     id: 3,
-    title: "Predictive Analytics Tool",
-    category: "AI Enablement",
-    description: "Machine learning solution for sales forecasting and customer behavior analysis.",
-    image: "https://via.placeholder.com/600x400/1a1a1a/666666",
-    link: "#"
+    title: "ODNB.com",
+    description: "A GPT-powered CRM tool that turns cold accounts into win-back opportunities.",
+    icon: <Briefcase className="h-6 w-6" />
   },
   {
     id: 4,
-    title: "Process Automation Suite",
-    category: "RevOps",
-    description: "End-to-end automation for critical business processes and workflows.",
-    image: "https://via.placeholder.com/600x400/1a1a1a/666666",
-    link: "#"
+    title: "Tokenized Case Management",
+    description: "Built an on-chain attestation platform for anti-trafficking impact using NFTs and verifiable data.",
+    icon: <Award className="h-6 w-6" />
+  },
+  {
+    id: 5,
+    title: "SMB Ops Optimization",
+    description: "Revamped strategy, sales ops, lead gen, and rev ops across logistics, service businesses, and IT firms.",
+    icon: <BarChart3 className="h-6 w-6" />
   },
 ];
 
 const Portfolio = () => {
-  const [activeFilter, setActiveFilter] = useState('All');
-  const categories = ['All', 'AI Enablement', 'RevOps'];
-  
-  const filteredProjects = activeFilter === 'All' 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
-
   return (
-    <section id="portfolio" className="py-20 relative geometric-bg">
-      <div className="container mx-auto px-4">
+    <section id="portfolio" className="py-20 relative">
+      {/* Background image with overlay */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/lovable-uploads/1d7e2d4a-ab75-4d48-89d1-b34a6c9e58b3.png')" }}
+      >
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 after:content-[''] after:block after:w-16 after:h-1 after:bg-white/20 after:mt-4">
-            Portfolio
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 after:content-[''] after:block after:w-16 after:h-1 after:bg-white/20 after:mt-4">
+            Selected Work
           </h2>
           
-          <div className="flex flex-wrap justify-center mb-12 gap-2">
-            {categories.map(category => (
-              <button
-                key={category}
-                onClick={() => setActiveFilter(category)}
-                className={`px-4 py-2 rounded-md transition-colors duration-200 ${
-                  activeFilter === category
-                    ? 'bg-white text-black'
-                    : 'bg-white/5 border border-white/10 text-white/70 hover:bg-white/10'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
+          <p className="text-white/80 text-lg md:text-xl mb-12 max-w-2xl">
+            A few ways I've helped orgs move faster, get leaner, and scale impact.
+          </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {filteredProjects.map(project => (
-              <div 
-                key={project.id} 
-                className="group bg-white/5 border border-white/10 rounded-lg overflow-hidden hover:border-white/20 transition-all duration-300"
-              >
-                <div className="aspect-video bg-black/20 relative overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <div className="p-6">
-                      <span className="px-2 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm text-white/90 mb-2 inline-block">
-                        {project.category}
-                      </span>
-                      <h3 className="text-xl font-bold">{project.title}</h3>
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {portfolioItems.map((item) => (
+              <Card key={item.id} className="bg-white/10 border-white/20 backdrop-blur-sm text-white hover:bg-white/15 transition-colors duration-300">
+                <CardHeader className="flex flex-row items-center gap-4 pb-2">
+                  <div className="p-2 rounded-full bg-white/10">
+                    {item.icon}
                   </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-white/70 mb-4">{project.description}</p>
-                  <a 
-                    href={project.link} 
-                    className="inline-flex items-center text-sm font-medium text-white/90 hover:text-white"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    View Project <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </div>
-              </div>
+                  <CardTitle className="text-xl font-bold">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-white/80">{item.description}</p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
