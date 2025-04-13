@@ -3,8 +3,11 @@ import { Code, FileText, User } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 relative geometric-bg">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 relative texture-bg">
+      <div className="absolute inset-0 bg-black/65 pointer-events-none"></div>
+      <div className="absolute inset-0 geometric-bg opacity-35 pointer-events-none"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 after:content-[''] after:block after:w-16 after:h-1 after:bg-white/20 after:mt-4">
             About Joel
