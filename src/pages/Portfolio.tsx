@@ -10,8 +10,18 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: 1, 
-    title: "Ag Companion", 
+    title: "ProofStack", 
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b", 
+    description: "Outbound sales AI using social proof", 
+    details: "Matches cold prospects with past wins; generates personalized social proof to boost response rates.",
+    link: "https://example.com/proofstack",
+    category: "AI Applications",
+    techStack: ["OpenAI API", "Typescript", "React", "PostgreSQL"]
+  }, 
+  {
+    id: 2, 
+    title: "Ag Companion", 
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e", 
     description: "AI assistant for rural farmers in India", 
     details: "Deployed an SMS-first interface in 3 dialects; partnered with 200+ churches; scaled via Eco Labs.",
     link: "https://example.com/ag-companion",
@@ -19,7 +29,7 @@ const projects = [
     techStack: ["OpenAI API", "Twilio", "Node.js", "PostgreSQL"]
   }, 
   {
-    id: 2, 
+    id: 3, 
     title: "ODNB CRM Tool", 
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6", 
     description: "AI tool for recovering lost sales opportunities", 
@@ -29,7 +39,7 @@ const projects = [
     techStack: ["OpenAI API", "Python", "PostgreSQL", "React"]
   }, 
   {
-    id: 3, 
+    id: 4, 
     title: "Digital Treasury", 
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475", 
     description: "Crypto-based financial rails for global nonprofits", 
@@ -37,6 +47,76 @@ const projects = [
     link: "https://example.com/digital-treasury",
     category: "Financial Systems",
     techStack: ["Circle", "Gnosis Safe", "MetaMask Institutional", "Chainalysis"]
+  },
+  {
+    id: 5, 
+    title: "Early Learning Indiana Planner", 
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158", 
+    description: "Enrollment and capacity planning for early education", 
+    details: "Developed statewide model for supply/demand insights across early learning programs.",
+    link: "https://example.com/early-learning",
+    category: "Data Analytics",
+    techStack: ["Python", "Pandas", "Tableau", "SQL"]
+  },
+  {
+    id: 6, 
+    title: "Last Bell Impact Platform", 
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81", 
+    description: "Program and assessment management for orphan graduates", 
+    details: "Integrated service CRM with verifiable outcomes and tokenized success indicators.",
+    link: "https://example.com/last-bell",
+    category: "Program Management",
+    techStack: ["React", "Node.js", "MongoDB", "AWS"]
+  },
+  {
+    id: 7, 
+    title: "Aptean Call Driver WinForm", 
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d", 
+    description: "Sales enablement WinForm for ERP presales", 
+    details: "Delivered field-friendly UI for use during discovery to guide product alignment conversations.",
+    link: "https://example.com/aptean",
+    category: "Sales Enablement",
+    techStack: [".NET", "WinForms", "SQL Server"]
+  },
+  {
+    id: 8, 
+    title: "Comparative Equivalent Assessment", 
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+    description: "Valuation model for SFHs with ADUs", 
+    details: "Created income-weighted scoring framework for fairer appraisals of properties with ADUs.",
+    link: "https://example.com/cea",
+    category: "Financial Systems",
+    techStack: ["Excel", "VBA", "Power BI"]
+  },
+  {
+    id: 9, 
+    title: "TPS Commercial Segmentation", 
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5", 
+    description: "Qualification & segmentation for commercial sales", 
+    details: "Built rule-based lead routing engine and scorecard to support new vertical market GTM.",
+    link: "https://example.com/tps",
+    category: "Sales Enablement",
+    techStack: ["Salesforce", "Apex", "JavaScript"]
+  },
+  {
+    id: 10, 
+    title: "CS Health Dashboard – Verdiem", 
+    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1", 
+    description: "Customer success dashboard for enterprise energy software", 
+    details: "Launched CS-facing analytics with health scores and alerting based on user engagement data.",
+    link: "https://example.com/verdiem",
+    category: "Data Analytics",
+    techStack: ["Tableau", "SQL", "Python", "AWS"]
+  },
+  {
+    id: 11, 
+    title: "LuisBushPapers.com", 
+    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7", 
+    description: "Scholarly archive for missiological works", 
+    details: "Designed a searchable archive and public-facing access portal for legacy missions content.",
+    link: "https://luisbushpapers.com",
+    category: "Web Development",
+    techStack: ["WordPress", "PHP", "JavaScript", "MySQL"]
   }
 ];
 
