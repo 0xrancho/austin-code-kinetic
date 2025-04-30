@@ -1,6 +1,8 @@
+
 import { ArrowDownIcon, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -49,10 +51,10 @@ const Hero = () => {
               className="brand-button bg-transparent border-2 border-white/40 hover:bg-white/10"
               asChild
             >
-              <a href="#portfolio">
+              <Link to="/portfolio">
                 <ArrowDownIcon className="h-5 w-5" />
                 View Portfolio
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
