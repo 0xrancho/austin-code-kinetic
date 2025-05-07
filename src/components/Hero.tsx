@@ -1,5 +1,5 @@
 
-import { ArrowDownIcon, Calendar } from 'lucide-react';
+import { ArrowDownIcon, Calendar, Quote } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
@@ -54,9 +54,13 @@ const Hero = () => {
             </Button>
           </div>
           
-          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
-            I'm a dad of five raising chickens in midtown Indy. I serve faith-driven founders, make AI music as @0xDisco, love taco trucks, and just want to play more golf.
-          </p>
+          <div className="flex items-center justify-center mb-2">
+            <Quote className="h-4 w-4 text-white/50 mr-2" />
+            <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto italic">
+              I'm a dad of five raising chickens in midtown Indy. I serve faith-driven founders, make AI music as @0xDisco, love taco trucks, and just want to play more golf.
+            </p>
+            <Quote className="h-4 w-4 text-white/50 ml-2 rotate-180" />
+          </div>
         </div>
       </div>
       
