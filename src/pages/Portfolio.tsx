@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -140,7 +139,7 @@ const Portfolio = () => {
       <main className="relative z-10 pt-24 pb-20">
         <div className="w-full relative z-10">
           <div className="content-box w-full mx-auto p-12 md:p-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Portfolio</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Projects</h1>
             
             <p className="text-white/80 text-lg md:text-xl mb-12 max-w-3xl">
               A deeper look into my work helping organizations build efficient systems, 

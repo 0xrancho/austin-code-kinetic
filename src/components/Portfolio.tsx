@@ -1,3 +1,4 @@
+
 import { Briefcase, Database, Clock, Award, BarChart3 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -47,7 +48,7 @@ const Portfolio = () => {
       <div className="w-full relative z-10">
         <div className="content-box w-full mx-auto p-12 md:p-16">
           <h2 className="section-title">
-            Selected Work
+            Projects
           </h2>
           
           <p className="text-white/80 text-lg md:text-xl mb-12">

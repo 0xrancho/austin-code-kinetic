@@ -25,11 +25,11 @@ const Hero = () => {
           </h1>
           
           <h2 className="text-xl md:text-2xl lg:text-3xl font-space-grotesk font-light text-white/80 mb-8">
-            Father of 5 | Revenue Operations | AI Enablement
+            5x Father | Sales Ops Engineer | AI-First Builder
           </h2>
           
           <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-12">
-            I design and implement high-leverage ops systems for mission-driven businesses, family offices, and nonprofits.
+            Deploying High-Leverage AI for Revenue & Ops Enablement
           </p>
           
           <div className="flex flex-wrap justify-center gap-6 mt-10">
@@ -53,7 +53,7 @@ const Hero = () => {
             >
               <Link to="/portfolio">
                 <ArrowDownIcon className="h-5 w-5" />
-                View Portfolio
+                View Projects
               </Link>
             </Button>
           </div>
