@@ -20,19 +20,19 @@ const About = () => {
             <div className="bg-black/80 border border-white/10 rounded-lg p-6 transition-transform hover:-translate-y-1 duration-300">
               <User className="w-10 h-10 mb-4 text-white/70" />
               <h3 className="text-xl font-bold mb-2">Personal</h3>
-              <p className="text-white/70">Father of five with a passion for technology and innovation.</p>
+              <p className="text-white/70">My wife and I have five kids, ten chickens, and a dog in our little midtown bungalow. We attend SOMA Church but celebrate Easter in South Bend. Our family loves traveling, gardening, making old things like new, exploring Indy parks, going to the zoo and museums, celebrating life, and being good neighbors and friends. If you visit in the spring or summer, you're sure to leave with a dozen eggs.</p>
             </div>
             
             <div className="bg-black/80 border border-white/10 rounded-lg p-6 transition-transform hover:-translate-y-1 duration-300">
               <Code className="w-10 h-10 mb-4 text-white/70" />
               <h3 className="text-xl font-bold mb-2">AI Enablement</h3>
-              <p className="text-white/70">Building solutions that leverage AI to solve real-world business challenges.</p>
+              <p className="text-white/70">LLMs have fundamentally changed the game for process-driven enablement. Stateless execution from generated inference can now handle complex analysis and workflows. Normalizing data to be useful is no longer constrained by having it all in one place. Data capture, schema building, declarative configuration, event triggers, and analysis can all be orchestrated with natural language. This not only opens new solution architectures—it's rapidly collapsing traditional Software Development Lifecycle.</p>
             </div>
             
             <div className="bg-black/80 border border-white/10 rounded-lg p-6 transition-transform hover:-translate-y-1 duration-300">
               <FileText className="w-10 h-10 mb-4 text-white/70" />
-              <h3 className="text-xl font-bold mb-2">Sales Ops</h3>
-              <p className="text-white/70">Optimizing revenue operations through strategic AI integration and process improvement.</p>
+              <h3 className="text-xl font-bold mb-2">Sales Ops Engineer</h3>
+              <p className="text-white/70">Sales Ops is the art of deploying technology and processes that create real, measurable leverage—not just for sales teams, but for every function that drives revenue. It's about finding hidden opportunities, clearing bottlenecks, automating friction, and designing feedback loops that compound momentum. I build tools that shorten sales cycles, simplify qualification, boost customer success, and make insight easy to act on. Whether it's customizing a CRM, building funnels, piping GPTs into workflows, or creating new data layers and programs—it all serves the same purpose: get results faster. Sales Ops isn't just forecasting and dashboards. It's architecture for growth.</p>
             </div>
           </div>
         </div>
