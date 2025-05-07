@@ -12,29 +12,15 @@ const About = () => {
           
           <div className="prose prose-invert prose-lg max-w-none mb-12">
             <p className="text-white/90 mb-6 leading-relaxed">
-              For software engineers, a commit records a milestone in code. For me, Commit represents something deeper: 
-              Coordinated Mission Integration Technology—and the call to lean in and build something with purpose.
+              I'm Joel Austin, a Sales Ops Engineer and AI-first builder. I've spent 15 years scaling systems that drive growth, from logistics and SaaS to international nonprofit and fintech. When data, process, and people are in sync, revenue scales, capacity grows, and momentum builds.
             </p>
             
             <p className="text-white/90 mb-6 leading-relaxed">
-              I started building data solutions in 2009 at a logistics company where I was hired to make sales calls. 
-              But I couldn't ignore the churn problem. So I dug into the data, built a basic integration in SSIS to 
-              populate a spreadsheet that predicted who would leave. Within three months, our retention rate jumped 
-              from 65% to over 90%. That small project grew into a service line that generated over $3 million in its 
-              first year—and sparked a lifelong obsession: what hidden value can be unlocked when systems, data, and 
-              stakeholders align?
+              I launched a Salesforce agency, Commit, to help companies move fast and build smarter. Even with some success implementing solutions across four continents and three languages, I knew we needed to pivot hard when 9 month sales cycles and $200K proposals were getting outbid by $10K chatbots with Copilot.
             </p>
 
             <p className="text-white/90 mb-6 leading-relaxed">
-              Today, I'm a Sales Ops Engineer who builds AI-first revenue and operations systems that scale smarter 
-              and faster than enterprise software ever could. I'm not here to sell you a bloated implementation. 
-              I'll help you skip it entirely with rapid prototyping, iterative testing, and fast deployment—delivering 
-              directly against your sales or service outcomes.
-            </p>
-            
-            <p className="text-white/90 mb-6 leading-relaxed">
-              I'm not consulting. I'm building.
-              If you want to move fast, scale smart, and grow—let's commit.
+              Now, I deploy AI-first revenue tools that are lightweight, modular, and complementary to your existing stack—automating qualification, boosting success, and accelerating sales. I'm not here to consult. I'm here to build. Let's commit.
             </p>
           </div>
           
