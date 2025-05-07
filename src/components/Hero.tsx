@@ -28,11 +28,7 @@ const Hero = () => {
             5x Father | Sales Ops Engineer | AI-First Builder
           </h2>
           
-          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-12">
-            Deploying High-Leverage AI for Revenue & Ops Enablement
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-6 mt-10">
+          <div className="flex flex-wrap justify-center gap-6 mt-10 mb-12">
             <Button 
               className="brand-button"
               asChild
@@ -57,6 +53,10 @@ const Hero = () => {
               </Link>
             </Button>
           </div>
+          
+          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
+            I'm a dad of five raising chickens in midtown Indy. I serve faith-driven founders, make AI music as @0xDisco, love taco trucks, and just want to play more golf.
+          </p>
         </div>
       </div>
       
