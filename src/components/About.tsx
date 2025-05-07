@@ -12,15 +12,7 @@ const About = () => {
           
           <div className="prose prose-invert prose-lg max-w-none mb-12">
             <p className="text-white/90 mb-6 leading-relaxed">
-              I'm Joel Austin, a Sales Ops Engineer and AI-first builder. I've spent 15 years scaling systems that drive growth, from logistics and SaaS to international nonprofit and fintech. When data, process, and people are in sync, revenue scales, capacity grows, and momentum builds.
-            </p>
-            
-            <p className="text-white/90 mb-6 leading-relaxed">
-              I launched a Salesforce agency, Commit, to help companies move fast and build smarter. Even with some success implementing solutions across four continents and three languages, I knew we needed to pivot hard when 9 month sales cycles and $200K proposals were getting outbid by $10K chatbots with Copilot.
-            </p>
-
-            <p className="text-white/90 mb-6 leading-relaxed">
-              Now, I deploy AI-first revenue tools that are lightweight, modular, and complementary to your existing stack—automating qualification, boosting success, and accelerating sales. I'm not here to consult. I'm here to build. Let's commit.
+              I'm Joel Austin, a Sales Ops Engineer and AI-first builder. I've spent 15 years scaling systems that drive growth, from logistics and SaaS to international nonprofit and fintech. When data, process, and people are in sync, revenue scales, capacity grows, and momentum builds. I launched a Salesforce agency, Commit, to help companies move fast and build smarter. Even with some success implementing solutions across four continents and three languages, I knew we needed to pivot hard when 9 month sales cycles and $200K proposals were getting outbid by $10K chatbots with Copilot. Now, I deploy AI-first revenue tools that are lightweight, modular, and complementary to your existing stack—automating qualification, boosting success, and accelerating sales. I'm not here to consult. I'm here to build. Let's commit.
             </p>
           </div>
           
