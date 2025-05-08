@@ -1,5 +1,5 @@
 
-import { Briefcase, Database, Clock, Award, BarChart3 } from 'lucide-react';
+import { Briefcase, Database, Clock, Award, BarChart3, Smartphone, Cloud, ChartBar, Users, FileText } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface PortfolioItem {
@@ -12,33 +12,63 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "Salesforce for Nonprofits",
-    description: "From client intake to outcomes reporting—fast, lean builds that deliver value from day one.",
+    title: "ProofStack",
+    description: "Outbound ai sales tool for high context social proof.",
     icon: <Database className="h-6 w-6" />
   },
   {
     id: 2,
-    title: "Digital Treasury",
-    description: "Helped global NGOs adopt stablecoins, improve FX transparency, and launch secure self-custody.",
-    icon: <Clock className="h-6 w-6" />
+    title: "Ag Companion",
+    description: "Micro-SaaS ai powered SMS app for rural farmers and third-world businesses.",
+    icon: <Smartphone className="h-6 w-6" />
   },
   {
     id: 3,
-    title: "ODNB.com",
-    description: "A GPT-powered CRM tool that turns cold accounts into win-back opportunities.",
+    title: "ODNB",
+    description: "Customer Success tool kit for mid-cycle sales, gap analysis, winbacks, retention, and referrals.",
     icon: <Briefcase className="h-6 w-6" />
   },
   {
     id: 4,
-    title: "Tokenized Case Management",
-    description: "Built an on-chain attestation platform for anti-trafficking impact using NFTs and verifiable data.",
-    icon: <Award className="h-6 w-6" />
+    title: "Digital Treasury",
+    description: "Knowledge and solution set for international payments, FX and treasury management on crypto rails.",
+    icon: <Cloud className="h-6 w-6" />
   },
   {
     id: 5,
-    title: "SMB Ops Optimization",
-    description: "Revamped strategy, sales ops, lead gen, and rev ops across logistics, service businesses, and IT firms.",
+    title: "TPS Commercial",
+    description: "Custom qualification, conversion automation, and assessments for commercial real estate sales.",
     icon: <BarChart3 className="h-6 w-6" />
+  },
+  {
+    id: 6,
+    title: "Wellness Impact Model",
+    description: "A tactical program and assessment model to implement a social theory of change for nonprofits.",
+    icon: <ChartBar className="h-6 w-6" />
+  },
+  {
+    id: 7,
+    title: "Early Learning Enrollment",
+    description: "A novel scoring, and match-index automation that consolidated enrollment across 16 schools.",
+    icon: <Award className="h-6 w-6" />
+  },
+  {
+    id: 8,
+    title: "Classroom Balancing",
+    description: "Robust seat configuration model for dynamic classroom occupancy and teacher scheduling.",
+    icon: <Users className="h-6 w-6" />
+  },
+  {
+    id: 9,
+    title: "Call-Driver Analysis",
+    description: "An optimized presales winform app to synthesis large volumes of support center call data.",
+    icon: <Clock className="h-6 w-6" />
+  },
+  {
+    id: 10,
+    title: "Luisbushpapers.com",
+    description: "A long term project to digitize and curate, and enrich missiological data and legacy for the global Church.",
+    icon: <FileText className="h-6 w-6" />
   },
 ];
 
