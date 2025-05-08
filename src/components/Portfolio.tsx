@@ -1,4 +1,3 @@
-
 import { Briefcase, Database, Clock, Award, BarChart3, Smartphone, Cloud, ChartBar, Users, FileText } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -44,7 +43,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "TPS Commercial",
     description: "Custom qualification, conversion automation, and assessments for commercial real estate sales.",
     icon: <BarChart3 className="h-6 w-6" />,
-    image: "/lovable-uploads/4115db9f-4ec9-4fa4-93b9-b1557ec9cde2.png"
+    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png" // Updated image
   },
   {
     id: 6,
@@ -65,21 +64,21 @@ const portfolioItems: PortfolioItem[] = [
     title: "Classroom Balancing",
     description: "Robust seat configuration model for dynamic classroom occupancy and teacher scheduling.",
     icon: <Users className="h-6 w-6" />,
-    image: "/lovable-uploads/cba80512-07c7-46b5-b8ec-1dd511638ec0.png"
+    image: "/lovable-uploads/897a4e8b-bf80-4491-8df2-e066fe5ab0b6.png" // Updated image
   },
   {
     id: 9,
     title: "Call-Driver Analysis",
     description: "An optimized presales winform app to synthesis large volumes of support center call data.",
     icon: <Clock className="h-6 w-6" />,
-    image: "/lovable-uploads/759278fe-f960-4fea-b0df-a1feb3cd5cab.png"
+    image: "/lovable-uploads/e0a0fe0a-f62c-4ea9-b8f8-ddfad810550d.png" // Updated image
   },
   {
     id: 10,
     title: "Luisbushpapers.com",
     description: "A long term project to digitize and curate, and enrich missiological data and legacy for the global Church.",
     icon: <FileText className="h-6 w-6" />,
-    image: "/lovable-uploads/1828ad0b-1432-45a7-a040-bb64b1e749c1.png"
+    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png" // Updated image
   },
 ];
 

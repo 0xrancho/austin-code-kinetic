@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -51,7 +50,7 @@ const projects = [
   {
     id: 5, 
     title: "TPS Commercial", 
-    image: "/lovable-uploads/4115db9f-4ec9-4fa4-93b9-b1557ec9cde2.png", 
+    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png",
     description: "Sales automation for commercial real estate", 
     details: "Custom qualification, conversion automation, and assessments for commercial real estate sales.",
     link: "https://example.com/tps-commercial",
@@ -81,7 +80,7 @@ const projects = [
   {
     id: 8, 
     title: "Classroom Balancing", 
-    image: "/lovable-uploads/cba80512-07c7-46b5-b8ec-1dd511638ec0.png", 
+    image: "/lovable-uploads/897a4e8b-bf80-4491-8df2-e066fe5ab0b6.png",
     description: "Dynamic classroom occupancy modeling", 
     details: "Robust seat configuration model for dynamic classroom occupancy and teacher scheduling.",
     link: "https://example.com/classroom-balancing",
@@ -91,7 +90,7 @@ const projects = [
   {
     id: 9, 
     title: "Call-Driver Analysis", 
-    image: "/lovable-uploads/759278fe-f960-4fea-b0df-a1feb3cd5cab.png", 
+    image: "/lovable-uploads/e0a0fe0a-f62c-4ea9-b8f8-ddfad810550d.png",
     description: "Support center call data synthesis", 
     details: "An optimized presales winform app to synthesis large volumes of support center call data.",
     link: "https://example.com/call-driver",
@@ -101,7 +100,7 @@ const projects = [
   {
     id: 10, 
     title: "Luisbushpapers.com", 
-    image: "/lovable-uploads/1828ad0b-1432-45a7-a040-bb64b1e749c1.png", 
+    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png",
     description: "Missiological data curation for the global Church", 
     details: "A long term project to digitize, curate, and enrich missiological data and legacy for the global Church.",
     link: "https://luisbushpapers.com",
