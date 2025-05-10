@@ -1,5 +1,5 @@
 
-import { Briefcase, Database, Clock, Award, BarChart3, Smartphone, Cloud, ChartBar, Users, FileText } from 'lucide-react';
+import { Briefcase, Database, Clock, Award, BarChart3, Smartphone, Cloud, ChartBar, Users, FileText, CreditCard } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface PortfolioItem {
@@ -80,6 +80,13 @@ const portfolioItems: PortfolioItem[] = [
     description: "A long term project to digitize and curate, and enrich missiological data and legacy for the global Church.",
     icon: <FileText className="h-6 w-6" />,
     image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png"
+  },
+  {
+    id: 11,
+    title: "Loan Qualification Automation",
+    description: "Flow automation for fintech auto-reseller used in front-end lead qualification.",
+    icon: <CreditCard className="h-6 w-6" />,
+    image: "/lovable-uploads/5e86117e-2aa7-4d2d-ac74-db2d5e55c370.png"
   },
 ];
 

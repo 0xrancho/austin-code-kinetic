@@ -1,4 +1,3 @@
-
 interface Project {
   id: number;
   title: string;
@@ -110,6 +109,16 @@ const projects: Project[] = [
     link: "https://luisbushpapers.com",
     category: "Web Development",
     techStack: ["WordPress", "PHP", "JavaScript", "MySQL"]
+  },
+  {
+    id: 11,
+    title: "Loan Qualification Automation",
+    image: "/lovable-uploads/5e86117e-2aa7-4d2d-ac74-db2d5e55c370.png",
+    description: "Flow automation for fintech auto-reseller",
+    details: "Multi-stage loan application workflow with automated qualification steps for fintech auto-reseller platforms.",
+    link: "https://example.com/loan-qualification",
+    category: "Financial Systems",
+    techStack: ["React", "Node.js", "MongoDB", "Flow Designer"]
   }
 ];
 
