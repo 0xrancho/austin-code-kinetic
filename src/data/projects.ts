@@ -64,7 +64,7 @@ const projects: Project[] = [
   {
     id: 6, 
     title: "Wellness Impact Model", 
-    image: "/lovable-uploads/98fa8280-158d-4348-b365-29bef98dffc7.png", 
+    image: "/lovable-uploads/479289cf-59b3-4620-a63b-d16a29c0e1aa.png", // Updated to new uploaded image
     description: "Social theory of change for nonprofits", 
     details: "A tactical program and assessment model to implement a social theory of change for nonprofits.",
     link: "https://example.com/wellness-impact",
