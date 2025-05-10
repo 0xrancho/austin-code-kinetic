@@ -54,7 +54,7 @@ const projects: Project[] = [
   {
     id: 5, 
     title: "TPS Commercial", 
-    image: "/lovable-uploads/98fa8280-158d-4348-b365-29bef98dffc7.png", // Updated image path
+    image: "/lovable-uploads/98fa8280-158d-4348-b365-29bef98dffc7.png",
     description: "Sales automation for commercial real estate", 
     details: "Custom qualification, conversion automation, and assessments for commercial real estate sales.",
     link: "https://example.com/tps-commercial",
@@ -64,7 +64,7 @@ const projects: Project[] = [
   {
     id: 6, 
     title: "Wellness Impact Model", 
-    image: "/lovable-uploads/479289cf-59b3-4620-a63b-d16a29c0e1aa.png", // Updated to new uploaded image
+    image: "/lovable-uploads/479289cf-59b3-4620-a63b-d16a29c0e1aa.png",
     description: "Social theory of change for nonprofits", 
     details: "A tactical program and assessment model to implement a social theory of change for nonprofits.",
     link: "https://example.com/wellness-impact",
@@ -84,7 +84,7 @@ const projects: Project[] = [
   {
     id: 8, 
     title: "Classroom Balancing", 
-    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png", // Updated image path
+    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png",
     description: "Dynamic classroom occupancy modeling", 
     details: "Robust seat configuration model for dynamic classroom occupancy and teacher scheduling.",
     link: "https://example.com/classroom-balancing",
@@ -94,7 +94,7 @@ const projects: Project[] = [
   {
     id: 9, 
     title: "Call-Driver Analysis", 
-    image: "/lovable-uploads/e0a0fe0a-f62c-4ea9-b8f8-ddfad810550d.png",
+    image: "/lovable-uploads/11c22e27-62c7-4157-b6cc-ae55f5b3190b.png",
     description: "Support center call data synthesis", 
     details: "An optimized presales winform app to synthesis large volumes of support center call data.",
     link: "https://example.com/call-driver",
@@ -104,7 +104,7 @@ const projects: Project[] = [
   {
     id: 10, 
     title: "Luisbushpapers.com", 
-    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png", // Updated image path
+    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png",
     description: "Missiological data curation for the global Church", 
     details: "A long term project to digitize, curate, and enrich missiological data and legacy for the global Church.",
     link: "https://luisbushpapers.com",

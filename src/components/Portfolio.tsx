@@ -1,3 +1,4 @@
+
 import { Briefcase, Database, Clock, Award, BarChart3, Smartphone, Cloud, ChartBar, Users, FileText } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -43,14 +44,14 @@ const portfolioItems: PortfolioItem[] = [
     title: "TPS Commercial",
     description: "Custom qualification, conversion automation, and assessments for commercial real estate sales.",
     icon: <BarChart3 className="h-6 w-6" />,
-    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png" // Updated image
+    image: "/lovable-uploads/98fa8280-158d-4348-b365-29bef98dffc7.png" 
   },
   {
     id: 6,
     title: "Wellness Impact Model",
     description: "A tactical program and assessment model to implement a social theory of change for nonprofits.",
     icon: <ChartBar className="h-6 w-6" />,
-    image: "/lovable-uploads/98fa8280-158d-4348-b365-29bef98dffc7.png"
+    image: "/lovable-uploads/479289cf-59b3-4620-a63b-d16a29c0e1aa.png"
   },
   {
     id: 7,
@@ -64,21 +65,21 @@ const portfolioItems: PortfolioItem[] = [
     title: "Classroom Balancing",
     description: "Robust seat configuration model for dynamic classroom occupancy and teacher scheduling.",
     icon: <Users className="h-6 w-6" />,
-    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png" // Updated image
+    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png"
   },
   {
     id: 9,
     title: "Call-Driver Analysis",
     description: "An optimized presales winform app to synthesis large volumes of support center call data.",
     icon: <Clock className="h-6 w-6" />,
-    image: "/lovable-uploads/e0a0fe0a-f62c-4ea9-b8f8-ddfad810550d.png" // Updated image
+    image: "/lovable-uploads/11c22e27-62c7-4157-b6cc-ae55f5b3190b.png"
   },
   {
     id: 10,
     title: "Luisbushpapers.com",
     description: "A long term project to digitize and curate, and enrich missiological data and legacy for the global Church.",
     icon: <FileText className="h-6 w-6" />,
-    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png" // Updated image
+    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png"
   },
 ];
 
