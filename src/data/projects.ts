@@ -34,7 +34,7 @@ const projects: Project[] = [
   {
     id: 3, 
     title: "ODNB", 
-    image: "/lovable-uploads/dd57d349-f5b0-493f-84bc-267faeef6136.png", 
+    image: "/lovable-uploads/b24ca347-9aa5-4765-a50f-5e1c355f0734.png", 
     description: "Customer Success toolkit for mid-cycle sales", 
     details: "Old Data New Business (ODNB) is a web app, currently in development, with working GPT prototype, that runs customer success or account management post sales plays like -- Expand, Winback, Referral, and Success Story.",
     link: "https://example.com/odnb",
