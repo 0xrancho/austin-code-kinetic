@@ -13,21 +13,21 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
     title: "ProofStack",
-    description: "Outbound AI sales tool for high context social proof.",
+    description: "Outbound ai sales tool for high context social proof.",
     icon: <Database className="h-6 w-6" />,
     image: "/lovable-uploads/1828ad0b-1432-45a7-a040-bb64b1e749c1.png"
   },
   {
     id: 2,
     title: "Ag Companion",
-    description: "Micro-SaaS AI powered SMS app for rural farmers and third-world businesses.",
+    description: "Micro-SaaS ai powered SMS app for rural farmers and third-world businesses.",
     icon: <Smartphone className="h-6 w-6" />,
     image: "/lovable-uploads/744b215f-ef0b-4420-8779-a9c6cad3ca4b.png"
   },
   {
     id: 3,
     title: "ODNB",
-    description: "Customer Success tool kit for mid-cycle sales analysis, winbacks, retention, and referrals.",
+    description: "Customer Success tool kit for mid-cycle sales, gap analysis, winbacks, retention, and referrals.",
     icon: <Briefcase className="h-6 w-6" />,
     image: "/lovable-uploads/1f846d54-4033-46ae-a5f6-1c87b3922dfe.png"
   },
@@ -43,7 +43,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "TPS Commercial",
     description: "Custom qualification, conversion automation, and assessments for commercial real estate sales.",
     icon: <BarChart3 className="h-6 w-6" />,
-    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png" // Updated image
+    image: "/lovable-uploads/98fa8280-158d-4348-b365-29bef98dffc7.png" // Updated image
   },
   {
     id: 6,
@@ -64,16 +64,22 @@ const portfolioItems: PortfolioItem[] = [
     title: "Classroom Balancing",
     description: "Robust seat configuration model for dynamic classroom occupancy and teacher scheduling.",
     icon: <Users className="h-6 w-6" />,
-    image: "/lovable-uploads/897a4e8b-bf80-4491-8df2-e066fe5ab0b6.png" // Updated image
+    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png" // Updated image
   },
   {
     id: 9,
-    title: "Call-Driver Analysis app",
+    title: "Call-Driver Analysis",
     description: "An optimized presales winform app to synthesis large volumes of support center call data.",
     icon: <Clock className="h-6 w-6" />,
     image: "/lovable-uploads/e0a0fe0a-f62c-4ea9-b8f8-ddfad810550d.png" // Updated image
   },
-
+  {
+    id: 10,
+    title: "Luisbushpapers.com",
+    description: "A long term project to digitize and curate, and enrich missiological data and legacy for the global Church.",
+    icon: <FileText className="h-6 w-6" />,
+    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png" // Updated image
+  },
 ];
 
 const Portfolio = () => {
