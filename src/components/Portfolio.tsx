@@ -29,7 +29,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "ODNB",
     description: "Customer Success tool kit for mid-cycle sales, gap analysis, winbacks, retention, and referrals.",
     icon: <Briefcase className="h-6 w-6" />,
-    image: "/lovable-uploads/1f846d54-4033-46ae-a5f6-1c87b3922dfe.png"
+    image: "/lovable-uploads/dd57d349-f5b0-493f-84bc-267faeef6136.png"
   },
   {
     id: 4,

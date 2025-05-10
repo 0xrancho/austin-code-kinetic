@@ -34,7 +34,7 @@ const projects: Project[] = [
   {
     id: 3, 
     title: "ODNB", 
-    image: "/lovable-uploads/1f846d54-4033-46ae-a5f6-1c87b3922dfe.png", 
+    image: "/lovable-uploads/dd57d349-f5b0-493f-84bc-267faeef6136.png", 
     description: "Customer Success toolkit for mid-cycle sales", 
     details: "Comprehensive solution for gap analysis, winbacks, retention, and referrals in mid-cycle sales.",
     link: "https://example.com/odnb",
