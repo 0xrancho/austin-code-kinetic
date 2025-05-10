@@ -54,7 +54,7 @@ const projects: Project[] = [
   {
     id: 5, 
     title: "TPS Commercial", 
-    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png",
+    image: "/lovable-uploads/98fa8280-158d-4348-b365-29bef98dffc7.png", // Updated image path
     description: "Sales automation for commercial real estate", 
     details: "Custom qualification, conversion automation, and assessments for commercial real estate sales.",
     link: "https://example.com/tps-commercial",
@@ -84,7 +84,7 @@ const projects: Project[] = [
   {
     id: 8, 
     title: "Classroom Balancing", 
-    image: "/lovable-uploads/897a4e8b-bf80-4491-8df2-e066fe5ab0b6.png",
+    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png", // Updated image path
     description: "Dynamic classroom occupancy modeling", 
     details: "Robust seat configuration model for dynamic classroom occupancy and teacher scheduling.",
     link: "https://example.com/classroom-balancing",
@@ -104,7 +104,7 @@ const projects: Project[] = [
   {
     id: 10, 
     title: "Luisbushpapers.com", 
-    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png",
+    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png", // Updated image path
     description: "Missiological data curation for the global Church", 
     details: "A long term project to digitize, curate, and enrich missiological data and legacy for the global Church.",
     link: "https://luisbushpapers.com",
