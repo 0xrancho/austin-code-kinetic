@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-space-grotesk font-bold">Joel A. Austin</h3>
-            <p className="text-white/60 text-sm">Father of 5 | AI Enablement | RevOps</p>
+            <p className="text-white/60 text-sm">5x Father | Sales Ops Engineer | AI-First Builder</p>
           </div>
           
           <div className="text-center md:text-right">

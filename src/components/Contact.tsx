@@ -1,5 +1,5 @@
 
-import { Calendar } from 'lucide-react';
+import { Calendar, Linkedin, Twitter, Music } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -17,7 +17,7 @@ const Contact = () => {
             </p>
             
             <Button 
-              className="brand-button text-lg py-6 px-8"
+              className="brand-button text-lg py-6 px-8 mb-8"
               asChild
             >
               <a 
@@ -30,6 +30,56 @@ const Contact = () => {
                 Schedule a Call
               </a>
             </Button>
+            
+            <div className="flex justify-center gap-4 mt-8">
+              <Button 
+                variant="outline" 
+                className="bg-black/50 border-white/30 hover:bg-black/80 text-white"
+                asChild
+              >
+                <a 
+                  href="https://www.linkedin.com/in/joelaustin/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <Linkedin className="h-5 w-5" />
+                  LinkedIn
+                </a>
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                className="bg-black/50 border-white/30 hover:bg-black/80 text-white"
+                asChild
+              >
+                <a 
+                  href="https://x.com/carolousue" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <Twitter className="h-5 w-5" />
+                  Twitter
+                </a>
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                className="bg-black/50 border-white/30 hover:bg-black/80 text-white"
+                asChild
+              >
+                <a 
+                  href="https://www.riffusion.com/playlist/77c6d581-2587-4834-a99c-573749d1e04b" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <Music className="h-5 w-5" />
+                  Riffusion
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
