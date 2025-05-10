@@ -21,7 +21,7 @@ const Contact = () => {
               asChild
             >
               <a 
-                href="https://calendly.com/joelaustin/30min?back=1&month=2025-04" 
+                href="https://calendly.com/joelaustin/30min" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
