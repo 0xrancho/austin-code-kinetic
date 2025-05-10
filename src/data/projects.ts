@@ -106,7 +106,7 @@ const projects: Project[] = [
     title: "LBP Legacy Project", 
     image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png",
     description: "Digital Archive & Missionary Research", 
-    details: "This is a long-term digitization effort of legacy Christian mission media and academic research; primarily focused on the life and work of Dr. Luis Bush: lusibushpaper.com.",
+    details: "This is a long-term digitization effort of legacy Christian mission media and academic research; primarily focused on the life and work of Dr. Luis Bush: lusibushpapers.com.",
     link: "https://luisbushpapers.com",
     category: "Web Development",
     techStack: ["StaticHTML", "SelfHosted", "DigitalArchives", "Jamstack"]
@@ -124,7 +124,7 @@ const projects: Project[] = [
   {
     id: 12,
     title: "Benefits Onboarding",
-    image: "/lovable-uploads/79e2f7a0-cfbb-400a-b3f0-17d8b1290202.png", // Using an existing image as placeholder
+    image: "/lovable-uploads/e55b83cb-66ba-4465-850d-dd37f54f7199.png",
     description: "AI-Powered Data Extraction from Insurance Plans to JavaScript Schema",
     details: "This is a private OpenAI GPT to scrape data from rich-text insurance documents with detailed plan pricing and qualification information. The tool retrieves specific parameters to build a structured onboarding .csv and a script to import them for onboarding configuration in the clients software.",
     link: "https://example.com/benefits-onboarding",
