@@ -43,7 +43,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "TPS Commercial",
     description: "Custom qualification, conversion automation, and assessments for commercial real estate sales.",
     icon: <BarChart3 className="h-6 w-6" />,
-    image: "/lovable-uploads/98fa8280-158d-4348-b365-29bef98dffc7.png" // Updated image
+    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png" // Updated image
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "Luisbushpapers.com",
     description: "A long term project to digitize and curate, and enrich missiological data and legacy for the global Church.",
     icon: <FileText className="h-6 w-6" />,
-    image: "/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png" // Updated image
+    image: "/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png" // Updated image
   },
 ];
 
