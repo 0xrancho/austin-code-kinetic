@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="flex items-center justify-center mb-2">
             <Quote className="h-4 w-4 text-white/50 mr-2" />
             <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto italic">
-              I'm a dad of five raising chickens in midtown Indy. I build tech to help faith-driven founders grow, make AI music as @0xDisco, love taco trucks, and just want to play more golf.
+              I'm a dad of five, raising chickens in Midtown Indy. I build tech to help faith-driven founders grow. I make AI music as @0xDisco, love taco trucks, and just want to play more golf.
             </p>
             <Quote className="h-4 w-4 text-white/50 ml-2 rotate-180" />
           </div>
