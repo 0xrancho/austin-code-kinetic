@@ -1,5 +1,5 @@
 
-import { Briefcase, Database, Smartphone, ChevronRight } from 'lucide-react';
+import { Briefcase, Database, GraduationCap, Wallet } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -13,10 +13,11 @@ interface PortfolioItem {
   image?: string;
 }
 
-// Find the ProofStack, ODNB, and Ag Companion projects
+// Find the ProofStack, ODNB, Early Learning Enrollment, and Digital Treasury projects
 const proofStackProject = projects.find(p => p.title === "ProofStack");
 const odnbProject = projects.find(p => p.title === "ODNB");
-const agCompanionProject = projects.find(p => p.title === "Ag Companion");
+const earlyLearningProject = projects.find(p => p.title === "Early Learning Enrollment");
+const digitalTreasuryProject = projects.find(p => p.title === "Digital Treasury");
 
 // Create portfolio items from these projects
 const portfolioItems: PortfolioItem[] = [
@@ -29,17 +30,24 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 2,
-    title: agCompanionProject?.title || "Ag Companion",
-    description: agCompanionProject?.description || "Micro-SaaS ai powered SMS app for rural farmers",
-    icon: <Smartphone className="h-6 w-6" />,
-    image: agCompanionProject?.image
-  },
-  {
-    id: 3,
     title: odnbProject?.title || "ODNB",
     description: odnbProject?.description || "Customer Success toolkit for mid-cycle sales",
     icon: <Briefcase className="h-6 w-6" />,
     image: odnbProject?.image
+  },
+  {
+    id: 3,
+    title: earlyLearningProject?.title || "Early Learning Enrollment",
+    description: earlyLearningProject?.description || "Enrollment Optimization and Automation for school system",
+    icon: <GraduationCap className="h-6 w-6" />,
+    image: earlyLearningProject?.image
+  },
+  {
+    id: 4,
+    title: digitalTreasuryProject?.title || "Digital Treasury",
+    description: digitalTreasuryProject?.description || "International payments on crypto rails",
+    icon: <Wallet className="h-6 w-6" />,
+    image: digitalTreasuryProject?.image
   }
 ];
 
@@ -56,7 +64,7 @@ const Portfolio = () => {
             A few ways I've helped orgs move faster, get leaner, and scale impact.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {portfolioItems.map((item) => (
               <Card key={item.id} className="bg-black/90 border border-white/20 text-white">
                 <CardHeader className="flex flex-row items-center gap-4 pb-2">
