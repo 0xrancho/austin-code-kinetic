@@ -10,9 +10,12 @@ interface ProjectModalProps {
 }
 
 const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
+  // Split the details by newline characters to create paragraphs
+  const paragraphs = project.details.split('\n\n');
+  
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4 backdrop-blur-sm">
-      <div className="bg-black/90 border border-white/20 rounded-lg p-6 max-w-2xl w-full shadow-xl text-white relative">
+      <div className="bg-black/90 border border-white/20 rounded-lg p-6 max-w-2xl w-full shadow-xl text-white relative max-h-[90vh] overflow-y-auto">
         <button 
           onClick={onClose}
           className="absolute top-4 right-4 p-1 rounded-full bg-white/10 hover:bg-white/20"
@@ -30,7 +33,17 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         </div>
         
         <h2 className="text-3xl font-bold mb-3">{project.title}</h2>
-        <p className="mb-6 text-white/80 text-lg">{project.details}</p>
+        
+        <div className="mb-6 text-white/80">
+          {paragraphs.map((paragraph, index) => (
+            <p 
+              key={index} 
+              className={`${paragraph.startsWith('•') ? 'pl-5' : ''} mb-4`}
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
         
         {project.techStack && (
           <div className="mb-8">
