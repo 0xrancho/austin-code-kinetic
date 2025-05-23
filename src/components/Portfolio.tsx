@@ -13,28 +13,33 @@ interface PortfolioItem {
   image?: string;
 }
 
-// Get only the first three projects from our projects data
+// Find the ProofStack, ODNB, and Ag Companion projects
+const proofStackProject = projects.find(p => p.title === "ProofStack");
+const odnbProject = projects.find(p => p.title === "ODNB");
+const agCompanionProject = projects.find(p => p.title === "Ag Companion");
+
+// Create portfolio items from these projects
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: projects[0].title,
-    description: projects[0].description,
+    title: proofStackProject?.title || "ProofStack",
+    description: proofStackProject?.description || "AI-Powered Social Proof Engine for Outbound Sales",
     icon: <Database className="h-6 w-6" />,
-    image: projects[0].image
+    image: proofStackProject?.image
   },
   {
     id: 2,
-    title: projects[1].title,
-    description: projects[1].description,
+    title: agCompanionProject?.title || "Ag Companion",
+    description: agCompanionProject?.description || "Micro-SaaS ai powered SMS app for rural farmers",
     icon: <Smartphone className="h-6 w-6" />,
-    image: projects[1].image
+    image: agCompanionProject?.image
   },
   {
     id: 3,
-    title: projects[2].title,
-    description: projects[2].description,
+    title: odnbProject?.title || "ODNB",
+    description: odnbProject?.description || "Customer Success toolkit for mid-cycle sales",
     icon: <Briefcase className="h-6 w-6" />,
-    image: projects[2].image
+    image: odnbProject?.image
   }
 ];
 
