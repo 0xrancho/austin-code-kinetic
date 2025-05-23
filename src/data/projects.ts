@@ -76,7 +76,7 @@ const projects: Project[] = [
     title: "Early Learning Enrollment", 
     image: "/lovable-uploads/d4b79823-b3cf-4bc3-b777-3e4c920fe027.png", 
     description: "Enrolllment Optimization and Automation for school system", 
-    details: "This was the first ever comprehensive enterprise scale solution for an Early Learning school system on Salesforce. It featured custom workflows and automation across intake, subsidy qualification, scoring, matching, enrollment, and transition planning.",
+    details: "As Director of Product & Systems at Early Learning Indiana, I led the design and delivery of the first enterprise-scale enrollment platform for early learning built on Salesforce. This system supported multi-site operations and consolidated siloed workflows into a unified digital experience across the entire enrollment lifecycle.\n\nThe solutions included:\n• Family-facing intake + qualification: capturing needs, subsidy eligibility, and service preferences\n• Scoring + matching engine: balancing availability, priority scoring, and family fit\n• Enrollment + onboarding flows: confirming placement, collecting documents, and scheduling start\n• Transition planning & seat management: giving program leads real-time visibility into classroom supply, age-out triggers, and staffing needs\n\nThe result was a coordinated system that drove a 12% increase in seat capacity across a 13 schools reduced manual placement labor, and aligned operations, program staff, and family experience through a single digital source of truth.",
     link: "https://example.com/early-learning",
     category: "Data Analytics",
     techStack: ["SalesOps", "Salesforce", "CustomObjects", "Flows", "Apex", "LightningApps", "API"]
