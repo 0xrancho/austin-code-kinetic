@@ -1,4 +1,3 @@
-
 interface Project {
   id: number;
   title: string;
@@ -66,7 +65,7 @@ const projects: Project[] = [
     title: "Wellness Impact Model", 
     image: "/lovable-uploads/479289cf-59b3-4620-a63b-d16a29c0e1aa.png",
     description: "Custom Outcomes and Service delivery solution", 
-    details: "This is a comprehensive theory of change model with custom assessments for a mentorship-based service model that was created for a nonprofit that serves orphan youth in Ukraine.",
+    details: "Whole-Person Outcomes, Measured and Mobilized\n\nI designed and implemented a full enterprise Program and Assessment solution on Salesforce for a Ukrainian nonprofit serving orphans and orphan graduates through education, support, and job training.\n\nThe core challenge: prove holistic growth. We needed more than service logs—we needed evidence of transformation across spiritual, mental, physical, economic, and relational dimensions.\n\nI built the Wellness Impact Model, a Theory of Change framework that defined key outcomes in each dimension and mapped them to measurable, qualitative assessments. These assessments were delivered through trusted mentor-youth relationships and recorded in a Ukrainian-language mobile app built on Salesforce.\n\nOutcome:\nThe system equipped 12 frontline staff and mentors to track real-time progress toward true youth wellness—giving the organization the data to validate impact, improve programs, and communicate results to funders.",
     link: "https://example.com/wellness-impact",
     category: "Program Management",
     techStack: ["Salesforce", "LightningApps", "OutcomeManagement", "ServiceDelivery"]
