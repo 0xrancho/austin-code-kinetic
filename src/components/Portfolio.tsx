@@ -13,9 +13,9 @@ interface PortfolioItem {
   image?: string;
 }
 
-// Find the ProofStack, ODNB, Early Learning Enrollment, and Digital Treasury projects
+// Find the ProofStack, Big Loud Shirt, Early Learning Enrollment, and Digital Treasury projects
 const proofStackProject = projects.find(p => p.title === "ProofStack");
-const odnbProject = projects.find(p => p.title === "ODNB");
+const bigLoudShirtProject = projects.find(p => p.title === "Big Loud Shirt");
 const earlyLearningProject = projects.find(p => p.title === "Early Learning Enrollment");
 const digitalTreasuryProject = projects.find(p => p.title === "Digital Treasury");
 
@@ -26,28 +26,28 @@ const portfolioItems: PortfolioItem[] = [
     title: proofStackProject?.title || "ProofStack",
     description: proofStackProject?.description || "AI-Powered Social Proof Engine for Outbound Sales",
     icon: <Database className="h-6 w-6" />,
-    image: proofStackProject?.image
+    image: proofStackProject?.images?.[0]
   },
   {
     id: 2,
-    title: odnbProject?.title || "ODNB",
-    description: odnbProject?.description || "Customer Success toolkit for mid-cycle sales",
+    title: bigLoudShirtProject?.title || "Big Loud Shirt",
+    description: bigLoudShirtProject?.description || "Turning Customer Data into New Business",
     icon: <Briefcase className="h-6 w-6" />,
-    image: odnbProject?.image
+    image: bigLoudShirtProject?.images?.[0]
   },
   {
     id: 3,
     title: earlyLearningProject?.title || "Early Learning Enrollment",
     description: earlyLearningProject?.description || "Enrollment Optimization and Automation for school system",
     icon: <GraduationCap className="h-6 w-6" />,
-    image: earlyLearningProject?.image
+    image: earlyLearningProject?.images?.[0]
   },
   {
     id: 4,
     title: digitalTreasuryProject?.title || "Digital Treasury",
     description: digitalTreasuryProject?.description || "International payments on crypto rails",
     icon: <Wallet className="h-6 w-6" />,
-    image: digitalTreasuryProject?.image
+    image: digitalTreasuryProject?.images?.[0]
   }
 ];
 

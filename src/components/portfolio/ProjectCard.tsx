@@ -15,11 +15,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
       onClick={() => onClick(project)}
     >
       <div className="w-full aspect-video overflow-hidden">
-        <img 
-          src={project.image} 
-          alt={project.title} 
-          className="w-full h-full object-cover" 
-        />
+        {project.images.length === 1 ? (
+          <img 
+            src={project.images[0]} 
+            alt={project.title} 
+            className="w-full h-full object-cover" 
+          />
+        ) : (
+          <div className="grid grid-cols-2 gap-1 w-full h-full">
+            {project.images.slice(0, 2).map((image, index) => (
+              <img 
+                key={index}
+                src={image} 
+                alt={`${project.title} ${index + 1}`} 
+                className="w-full h-full object-cover" 
+              />
+            ))}
+          </div>
+        )}
       </div>
       <CardContent className="p-6">
         <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
