@@ -53,6 +53,16 @@ const projects: Project[] = [
   },
   {
     id: 5, 
+    title: "InitialScreen", 
+    images: ["/lovable-uploads/e3ce4d5b-7cf5-4ab9-afce-f36f88a9c8db.png"], 
+    description: "AI-powered job search copilot. From discovery to delivery.", 
+    details: "InitialScreen is a custom GPT-driven assistant I built to fully streamline my job search — from initial role discovery through personalized resume creation and application tracking. It automates what most job seekers do manually: search, filter, apply, and track — but does it with intelligence and integration.\n\nKey Features\n\n🔍 Scrape & Search Jobs\nInitialScreen runs targeted job searches based on natural language prompts (e.g. \"Show me GTM Strategy roles in Indianapolis\"). It parses public listings and returns structured, enriched summaries with location, salary, overview, and apply links.\n\n📊 Score Against Resume\nEach job is scored against my uploaded resume to highlight alignment. This prioritizes high-fit roles and avoids wasting cycles on low-probability applications.\n\n📥 Log Jobs into Airtable Pipeline\nJobs can be logged to my Airtable pipeline with a single command (e.g. \"Log this role and the last one too\"). The system captures role title, company, link, salary, referral notes, and status — no form-filling required.\n\n📄 Generate ATS-Ready Resume\nInitialScreen creates a customized resume tailored to each job, designed to pass ATS filters (Applicant Verification Systems) using context-aware phrasing, clean formatting, and keyword alignment.\n\n☁️ Save Resume to Google Drive\nEach custom resume is automatically saved to a designated Google Drive folder, named with the role and company. This keeps a full audit trail of all versions and targets.\n\n🔗 Attach Resume Link to Job Record\nThe final step: the shareable Drive URL is attached back to the matching Airtable job record, so every opportunity is fully documented and ready to send.\n\nTech Stack\nGPT-4 + Custom Prompt Logic (for inference and writing)\nPipedream + Node + Axios (middleware + Airtable + Drive integration)\nAirtable (for pipeline tracking and scoring)\nGoogle Drive API (for file generation and link management)\n\nStatus\nInitialScreen is live and logging jobs daily. Scoring, resume generation, and Drive uploads are in staged development with partial automation complete.\n\nWant to build something like this for yourself or your org? Let's talk →",
+    link: "https://example.com/initialscreen",
+    category: "AI Applications",
+    techStack: ["GPT-4", "Pipedream", "Node.js", "Airtable", "GoogleDriveAPI", "Automation"]
+  },
+  {
+    id: 6, 
     title: "Realty Group Sales Ops", 
     images: ["/lovable-uploads/98fa8280-158d-4348-b365-29bef98dffc7.png"],
     description: "Sales automation for commercial real estate", 
@@ -62,7 +72,7 @@ const projects: Project[] = [
     techStack: ["SalesforceCore", "SalesOps", "LeadScoring", "DataModeling"]
   },
   {
-    id: 6, 
+    id: 7, 
     title: "Wellness Impact Model", 
     images: ["/lovable-uploads/479289cf-59b3-4620-a63b-d16a29c0e1aa.png"],
     description: "Custom Outcomes and Service delivery solution", 
@@ -72,7 +82,7 @@ const projects: Project[] = [
     techStack: ["Salesforce", "LightningApps", "OutcomeManagement", "ServiceDelivery"]
   },
   {
-    id: 7, 
+    id: 8, 
     title: "Early Learning Enrollment", 
     images: ["/lovable-uploads/d4b79823-b3cf-4bc3-b777-3e4c920fe027.png"], 
     description: "Enrolllment Optimization and Automation for school system", 
@@ -82,7 +92,7 @@ const projects: Project[] = [
     techStack: ["SalesOps", "Salesforce", "CustomObjects", "Flows", "Apex", "LightningApps", "API"]
   },
   {
-    id: 8, 
+    id: 9, 
     title: "Classroom Balancing", 
     images: ["/lovable-uploads/f177f04f-c577-4e30-9eef-814410cd159a.png"],
     description: "Automated classroom capacity planning for school system", 
@@ -92,7 +102,7 @@ const projects: Project[] = [
     techStack: ["SalesOps", "Salesforce", "Flows", "CustomObjects"]
   },
   {
-    id: 9, 
+    id: 10, 
     title: "Call Driver Analysis", 
     images: ["/lovable-uploads/11c22e27-62c7-4157-b6cc-ae55f5b3190b.png"],
     description: "Presales tool for IT helpdesk automation software", 
@@ -102,7 +112,7 @@ const projects: Project[] = [
     techStack: ["WinForms", "CSharp", "SQL", "RootCauseAnalysis", "Presales", "SalesOps"]
   },
   {
-    id: 10, 
+    id: 11, 
     title: "LBP Legacy Project", 
     images: ["/lovable-uploads/fc31dcea-b9ed-410c-9464-e51ad3b2a32f.png"],
     description: "Digital Archive & Missionary Research", 
@@ -112,7 +122,7 @@ const projects: Project[] = [
     techStack: ["StaticHTML", "SelfHosted", "DigitalArchives", "Jamstack"]
   },
   {
-    id: 11,
+    id: 12,
     title: "Loan Qualification Automation",
     images: ["/lovable-uploads/5e86117e-2aa7-4d2d-ac74-db2d5e55c370.png"],
     description: "Salesforce Automation for Loan Readiness Evaluation",
@@ -122,7 +132,7 @@ const projects: Project[] = [
     techStack: ["Salesforce", "Flows", "SalesOps", "Chatbot", "Automation"]
   },
   {
-    id: 12,
+    id: 13,
     title: "Benefits Onboarding",
     images: ["/lovable-uploads/e55b83cb-66ba-4465-850d-dd37f54f7199.png"],
     description: "AI-Powered Data Extraction from Insurance Plans to JavaScript Schema",
