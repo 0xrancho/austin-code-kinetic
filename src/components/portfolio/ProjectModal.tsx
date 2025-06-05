@@ -26,7 +26,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         
         <div className="mb-6 w-full aspect-video overflow-hidden rounded-md">
           <img 
-            src={project.image} 
+            src={project.images[0]} 
             alt={project.title} 
             className="w-full h-full object-cover" 
           />
