@@ -1,4 +1,3 @@
-
 interface Project {
   id: number;
   title: string;
@@ -18,7 +17,7 @@ const projects: Project[] = [
     description: "Instant Social Proof for Any Outbound Funnel", 
     details: "ProofStack – Instant Social Proof for Any Outbound Funnel\nProofStack started as a 24-hour prototype — and instantly clicked. It's now one of the most versatile outbound tools I've ever built.\n\nIt was born from a simple sales pain: \"My SDRs are smart, but they freeze — they don't know what to say, or why it matters.\"\n\nSo we flipped the script.\n\nInstead of training reps to search for relevance, we built a tool that delivers it — automatically.\n\nProofStack uses retrieval-augmented generation (RAG) to surface internal social proof — case studies, product wins, and segment insights — tied directly to the lead's inferred profile. Whether you're targeting biotech in Boston or compliance startups in Berlin, ProofStack adapts to your funnel.\n\nHere's what it does:\n\nIngests your real customer wins, segmented by persona, product, and outcome\n\nParses target leads (via Apollo API) to infer sub-industry, size, location, and intent\n\nMatches the lead to similar wins — and outputs short, high-trust message starters\n\nEquips reps with contextual credibility in seconds — no prep required\n\nIt's built for teams who:\n\nSell into multiple industries or geos\n\nOnboard new reps frequently\n\nNeed a repeatable, scalable trust-builder at the top of the funnel\n\nImpact (based on pilot demos):\n\n+10% outbound velocity\n\n+10% connect-to-meeting rate\n\n+10% rep ramp speed\n\n+10% lift in mid-cycle upsell conversion\n\nCurrent status:\n\nDemoed to 6 enterprise sales teams\n\n6 expressed immediate buying intent ($500 - $3500 /seat range including data spend)\n\nGathering LOIs and refining GTM for MVP launch\n\nProofStack isn't just a research killer — it's a trust engine.\nAnd it works because it's tailored to your stack, your stories, and your segment.",
     link: "https://example.com/proofstack",
-    category: "AI Applications",
+    category: "Sales Enablement",
     techStack: ["SalesOps", "GPT-4o", "OpenAI_GPT", "SocialProof"]
   },
   {
@@ -38,7 +37,7 @@ const projects: Project[] = [
     description: "Turning Customer Data into New Business", 
     details: "Big Loud Shirt – Turning Customer Data into New Business\nA Sales-Ready Insight Engine for Non-Technical Teams\nBig Loud Shirt (formerly ODNB) is a generative analytics front end that transforms complex customer data into immediate, segment-driven campaigns — no data scientist required.\nIt was built to solve a simple problem:\n💬 \"We have tons of great data and insights... if someone knows how to configure Elastic and write big data queries .\"\nThis demo-ready tool gives go-to-market teams the power to explore historical data by goal and tactic, visualize buyer segments in real time, and generate campaign-ready, hyper-segmented, messaging with a single click.\n\nBuilt for OpenInsights, Inspired by the Field\nDesigned in collaboration with leadership at OpenInsights — a next-gen BI company building proprietary ML analytics models  — Big Loud Shirt acts as a product demo frontend that showcases the power of their Universal Audience Model (UAM) and segmentation engine.\nInstead of just displaying dashboards, it creates revenue playbooks from historical data.\n\n💡 Key Features\nGoal-Based UX: Winback, Expand, or Advocate — pick your GTM objective\n\nTactic-Aware Prompts: Smart query builder shifts based on selected play\n\nSunburst Segment Viewer: Interactive visual explorer with GPT_BIN slider and refinements\n\nAI Engagement Blueprint: Every segment comes with messaging ideas, channel recs, and reach estimates\n\nPreloaded Datasets: Built for sales demos — no data scientist required\n\n🤘 Why It Works\nBig Loud Shirt speaks the language of sellers, not BI analysts. It wraps ML-powered segmentation in a vibrant, accessible UI that shows value fast and unlocks mid-market buyers who'd otherwise be locked out of advanced ML and BI tools.\nOh — and the logo is a Picasso-style dude in marching band pants with a Hawaiian shirt and a bass drum.\n\nBecause data should make noise and get people excited!",
     link: "https://example.com/big-loud-shirt",
-    category: "AI Applications",
+    category: "Sales Enablement",
     techStack: ["Loveable", "Supabase", "PythonFlask", "GPT-4o"]
   }, 
   {
