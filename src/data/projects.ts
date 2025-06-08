@@ -1,3 +1,4 @@
+
 interface Project {
   id: number;
   title: string;
@@ -139,6 +140,16 @@ const projects: Project[] = [
     link: "https://example.com/benefits-onboarding",
     category: "AI Applications",
     techStack: ["OpenAI", "GPT-4o", "API", "JavaScript", "DocumentParsing"]
+  },
+  {
+    id: 14,
+    title: "ODNB - Operational GTM for Growth-Stage Teams",
+    images: ["https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"],
+    description: "Operational GTM for Growth-Stage Teams",
+    details: "ODNB - Operational GTM for Growth-Stage Teams\n\nThis project began as a pattern I've been solving my entire career:\n\n\"Our data doesn't talk. If it did, we'd save money or make more of it.\"\n\nFrom Excel lookups to SQL joins, BI tools, C# pipelines to Salesforce flows — this logic has underpinned most of my ops and product work. Enrollment platforms, logistics quote engines, customer win-back systems — all variants of the same core mechanism: match data to surface assumption or problem.\n\nODNB is the evolution of that pattern — rebuilt with RAG architecture and GPT logic.\n\nOriginally designed for mid-level service and SaaS businesses looking to build or optimize their success strategies, ODNB lets you upload historical customer records and current product/service taxonomy. It then segments intelligently based on GTM goal (Winback, Expand, Advocate) and tactic — and generates actionable insight and messaging to engage each segment.\n\nUse Cases\nMid-cycle customer success and account management\n\nRetention and expansion automation for growth-stage orgs\n\nTactical GTM design for under-engaged customer bases\n\nPortfolio companies turning operational data into near-term revenue\n\nTech Stack\nGPT-4o with RAG logic\n\nCSV and Airtable ingestion\n\nStructured prompt stacks for segmentation and outreach scripting\n\nCurrent Stage\nActively piloted by a Success team\n\nLogic tuned for structured SMB data sets (not just survival-mode records)\n\nSegment playbooks aligned to real-world tactics, not theoretical metrics\n\nExploring vertical-specific templates to simplify onboarding and boost accuracy\n\nODNB isn't trying to replace your data warehouse or predict the future — it's trying to show you what's already there, waiting to be activated.\nIt's less about flashy AI — and more about revenue archaeology: helping lean teams find the value they're sitting on, and giving them the GTM motion to act on it before churn, silence, or inertia sets in.",
+    link: "https://example.com/odnb",
+    category: "Sales Enablement",
+    techStack: ["GPT-4o", "RAG", "CSV", "Airtable", "Segmentation", "GTM"]
   }
 ];
 
