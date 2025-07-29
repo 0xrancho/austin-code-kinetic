@@ -15,13 +15,11 @@ const Services = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Card 1: Lehitgashem */}
           <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-border/50 bg-card/80 backdrop-blur-sm">
-            <div className="absolute top-4 left-4 bg-primary/20 px-3 py-1 rounded-full">
-              <span className="text-sm font-medium text-primary">coaching</span>
-            </div>
+
             
             <CardHeader className="pb-4">
               <CardTitle className="text-2xl text-card-foreground">Lehitgashem</CardTitle>
-              <div className="text-3xl font-bold text-primary">$800</div>
+              <div className="text-3xl font-bold text-pink-500">$800</div>
               <p className="text-lg text-muted-foreground">Ideation enrichment</p>
             </CardHeader>
             
@@ -63,7 +61,15 @@ const Services = () => {
                 </p>
               </div>
               
-              <Button className="w-full">Schedule 1-1</Button>
+              <Button className="w-full" asChild>
+                <a 
+                  href="https://calendly.com/joelaustin/30min?month=2025-07" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Schedule 1-1
+                </a>
+              </Button>
             </CardContent>
           </Card>
 
@@ -71,7 +77,7 @@ const Services = () => {
           <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-border/50 bg-card/80 backdrop-blur-sm">
             <CardHeader className="pb-4">
               <CardTitle className="text-2xl text-card-foreground">AI Enablement</CardTitle>
-              <div className="text-3xl font-bold text-primary">From $2,400 +</div>
+              <div className="text-3xl font-bold text-pink-500">From $2,400 +</div>
               <p className="text-lg text-muted-foreground">Custom workflow optimization and generative AI automations.</p>
             </CardHeader>
             
@@ -86,7 +92,7 @@ const Services = () => {
                   <li>• Team GPT Assistance and Support ($200/month)</li>
                   <li>• Custom RAG Applications ($10K-25K)</li>
                   <li>• Enterprise AI Infrastructure (Custom quote)</li>
-                  <li>• Full productization and white-labeling</li>
+                  <li>• Full productization and white-labeling (Custom quote)</li>
                 </ul>
               </div>
               
@@ -99,8 +105,14 @@ const Services = () => {
                 </p>
               </div>
               
-              <Button variant="outline" className="w-full">
-                Explore AI Services →
+              <Button className="w-full" asChild>
+                <a 
+                  href="https://calendly.com/joelaustin/30min?month=2025-07" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  AI Services site coming soon! →
+                </a>
               </Button>
             </CardContent>
           </Card>
@@ -111,8 +123,14 @@ const Services = () => {
           <h3 className="text-2xl font-bold text-foreground mb-6">
             Ready to bring your vision into reality?
           </h3>
-          <Button size="lg" className="px-8">
-            Schedule a 1-1 session
+          <Button size="lg" className="px-8" asChild>
+            <a 
+              href="https://calendly.com/joelaustin/30min?month=2025-07" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Schedule a 1-1 session
+            </a>
           </Button>
         </div>
       </div>

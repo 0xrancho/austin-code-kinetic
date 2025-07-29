@@ -34,7 +34,7 @@ const Hero = () => {
               asChild
             >
               <a 
-                href="https://calendly.com/joelaustin/30min" 
+                href="https://calendly.com/joelaustin/30min?month=2025-07" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
