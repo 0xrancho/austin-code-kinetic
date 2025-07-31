@@ -1,8 +1,6 @@
-// File: src/components/Contact.tsx
 
-import { Calendar, Linkedin, Twitter, Music, MessageCircle } from 'lucide-react';
+import { Calendar, Linkedin, Twitter, Music } from 'lucide-react';
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -33,23 +31,10 @@ const Contact = () => {
               </a>
             </Button>
             
-            <div className="flex justify-center gap-4 mt-8 flex-wrap">
-              <Button 
-                className="gabi-button mb-2"
-                asChild
-              >
-                <Link 
-                  to="/gabi"
-                  className="flex items-center gap-2"
-                >
-                  <MessageCircle className="h-5 w-5" />
-                  Ask GABI
-                </Link>
-              </Button>
-
+            <div className="flex justify-center gap-4 mt-8">
               <Button 
                 variant="outline" 
-                className="bg-black/50 border-white/30 hover:bg-black/80 text-white mb-2"
+                className="bg-black/50 border-white/30 hover:bg-black/80 text-white"
                 asChild
               >
                 <a 
@@ -65,7 +50,7 @@ const Contact = () => {
               
               <Button 
                 variant="outline" 
-                className="bg-black/50 border-white/30 hover:bg-black/80 text-white mb-2"
+                className="bg-black/50 border-white/30 hover:bg-black/80 text-white"
                 asChild
               >
                 <a 
@@ -81,7 +66,7 @@ const Contact = () => {
               
               <Button 
                 variant="outline" 
-                className="bg-black/50 border-white/30 hover:bg-black/80 text-white mb-2"
+                className="bg-black/50 border-white/30 hover:bg-black/80 text-white"
                 asChild
               >
                 <a 
@@ -103,4 +88,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

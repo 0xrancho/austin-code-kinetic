@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -20,7 +19,8 @@ const Navbar = () => {
   const navLinks = [
     { name: 'About', href: '/#about' },
     { name: 'Projects', href: '/portfolio' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Chat with GABI', href: '/gabi', isGabi: true },
   ];
 
   return (
@@ -37,17 +37,27 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <li key={link.name}>
-              {link.href.startsWith('/') ? (
+              {link.href.startsWith('/') && !link.href.startsWith('/#') ? (
                 <Link 
                   to={link.href}
-                  className="text-white/80 hover:text-white transition-colors duration-200 font-inter text-sm uppercase tracking-wide"
+                  className={cn(
+                    "transition-colors duration-200 font-inter text-sm uppercase tracking-wide",
+                    link.isGabi 
+                      ? "text-pink-400 hover:text-pink-300 font-semibold" 
+                      : "text-white/80 hover:text-white"
+                  )}
                 >
                   {link.name}
                 </Link>
               ) : (
                 <a 
                   href={link.href}
-                  className="text-white/80 hover:text-white transition-colors duration-200 font-inter text-sm uppercase tracking-wide"
+                  className={cn(
+                    "transition-colors duration-200 font-inter text-sm uppercase tracking-wide",
+                    link.isGabi 
+                      ? "text-pink-400 hover:text-pink-300 font-semibold" 
+                      : "text-white/80 hover:text-white"
+                  )}
                 >
                   {link.name}
                 </a>
@@ -73,10 +83,15 @@ const Navbar = () => {
             <ul className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  {link.href.startsWith('/') ? (
+                  {link.href.startsWith('/') && !link.href.startsWith('/#') ? (
                     <Link 
                       to={link.href}
-                      className="block py-2 text-white/80 hover:text-white transition-colors duration-200 font-inter uppercase tracking-wide"
+                      className={cn(
+                        "block py-2 transition-colors duration-200 font-inter uppercase tracking-wide",
+                        link.isGabi 
+                          ? "text-pink-400 hover:text-pink-300 font-semibold" 
+                          : "text-white/80 hover:text-white"
+                      )}
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}
@@ -84,7 +99,12 @@ const Navbar = () => {
                   ) : (
                     <a 
                       href={link.href}
-                      className="block py-2 text-white/80 hover:text-white transition-colors duration-200 font-inter uppercase tracking-wide"
+                      className={cn(
+                        "block py-2 transition-colors duration-200 font-inter uppercase tracking-wide",
+                        link.isGabi 
+                          ? "text-pink-400 hover:text-pink-300 font-semibold" 
+                          : "text-white/80 hover:text-white"
+                      )}
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}
@@ -101,3 +121,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -42,7 +42,7 @@ const Footer = () => {
               © {currentYear} Joel A. Austin. All rights reserved.
             </p>
             <p className="text-white/60 text-sm mt-1 flex items-center justify-center md:justify-end">
-              Made with <Heart className="h-3 w-3 mx-1 text-red-400" /> in San Francisco
+              Made with <Heart className="h-3 w-3 mx-1 text-red-400" /> in Indianapolis
             </p>
           </div>
         </div>

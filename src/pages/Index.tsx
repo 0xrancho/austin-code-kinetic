@@ -1,8 +1,8 @@
-
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
+import GabiSection from "../components/GabiSection";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -21,6 +21,7 @@ const Index = () => {
         <Hero />
         <About />
         <Portfolio />
+        <GabiSection />
         <Services />
         <Contact />
       </main>
@@ -31,3 +32,4 @@ const Index = () => {
 };
 
 export default Index;
+
