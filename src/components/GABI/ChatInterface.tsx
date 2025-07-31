@@ -60,7 +60,7 @@ const ChatInterface = () => {
       }
     ];
 
-    const response = await fetch('/api/chat', {
+    const response = await fetch('https://austin-ai-interviewer.vercel.app/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 
