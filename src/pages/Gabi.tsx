@@ -6,12 +6,8 @@ import ChatInterface from "../components/GABI/ChatInterface";
 const Gabi = () => {
   return (
     <div className="min-h-screen relative">
-      {/* Background */}
       <MainBackground />
-      
-      {/* Content */}
       <Navbar />
-      
       <main className="relative z-10 pt-24 pb-20">
         <div className="w-full relative z-10">
           <div className="content-box w-full mx-auto p-12 md:p-16">
@@ -20,16 +16,14 @@ const Gabi = () => {
                 Chat with GABI
               </h1>
               <p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto">
-                My AI assistant is here to help you explore my work, understand my approach, 
+                My AI assistant is here to help you explore my work, understand my approach,
                 and determine if we're a good fit for your project. Ask GABI anything!
               </p>
             </div>
             
-            {/* Chat Widget Container */}
             <div className="max-w-4xl mx-auto">
               <div className="bg-card/80 backdrop-blur-sm rounded-lg border border-border/50 p-8 shadow-xl">
                 <div className="relative">
-                  {/* Chat Interface Component */}
                   <div className="h-[600px]">
                     <ChatInterface />
                   </div>
@@ -39,7 +33,7 @@ const Gabi = () => {
             
             <div className="text-center mt-8">
               <p className="text-sm text-muted-foreground">
-                GABI is powered by advanced AI and trained on Joel's experience, projects, and expertise. 
+                GABI is powered by advanced AI and trained on Joel's experience, projects, and expertise.
                 <br />
                 Get instant insights about potential collaborations.
               </p>
@@ -47,11 +41,9 @@ const Gabi = () => {
           </div>
         </div>
       </main>
-      
       <Footer />
     </div>
   );
 };
 
 export default Gabi;
-
