@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { AutoGrowTextarea } from '@/components/ui/auto-grow-textarea';
 import { Card } from '@/components/ui/card';
 import { Send, Bot, User, Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 interface Message {
   id: string;
@@ -12,11 +13,19 @@ interface Message {
   timestamp: Date;
 }
 
-const ChatInterface = () => {
+interface ChatInterfaceProps {
+  onInputFocus?: () => void;
+  isFullScreen?: boolean;
+}
+
+const ChatInterface: React.FC<ChatInterfaceProps> = ({ 
+  onInputFocus, 
+  isFullScreen = false 
+}) => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      content: "Hi! I'm GABI, Joel's AI assistant. I'm here to help you learn more about Joel's background, services, and expertise. What would you like to know?",
+      content: "Hi! I'm GABI, Joel's AI assistant. How can I help?",
       sender: 'gabi',
       timestamp: new Date()
     }
@@ -24,6 +33,7 @@ const ChatInterface = () => {
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -34,18 +44,46 @@ const ChatInterface = () => {
   }, [messages]);
 
   const handleSendMessage = async () => {
-  if (!inputValue.trim()) return;
+    if (!inputValue.trim()) return;
 
-  const userMessage: Message = {
-    id: Date.now().toString(),
-    content: inputValue.trim(),
-    sender: 'user',
-    timestamp: new Date()
-  };
+    // Validate and process the message
+    const validation = validateMessage(inputValue.trim());
+    
+    // If message is blocked, show error and return
+    if (validation.isBlocked) {
+      const errorMessage: Message = {
+        id: Date.now().toString(),
+        content: validation.notification!,
+        sender: 'gabi',
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, errorMessage]);
+      setInputValue('');
+      return;
+    }
 
-  setMessages(prev => [...prev, userMessage]);
-  setInputValue('');
-  setIsLoading(true);
+    const userMessage: Message = {
+      id: Date.now().toString(),
+      content: validation.processedMessage,
+      sender: 'user',
+      timestamp: new Date()
+    };
+
+    setMessages(prev => [...prev, userMessage]);
+    
+    // Show truncation notification if message was trimmed
+    if (validation.notification) {
+      const notificationMessage: Message = {
+        id: (Date.now() + 0.5).toString(),
+        content: `ℹ️ ${validation.notification}`,
+        sender: 'gabi',
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, notificationMessage]);
+    }
+    
+    setInputValue('');
+    setIsLoading(true);
 
   try {
     // Convert your messages to OpenAI format for the API
@@ -92,17 +130,74 @@ const ChatInterface = () => {
   }
 };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  // Security validation utility with auto-truncation
+  const validateMessage = (message: string): { processedMessage: string; notification?: string; isBlocked: boolean } => {
+    let processedMessage = message;
+    let notification: string | undefined;
+    
+    // Auto-truncate messages at 1500 characters
+    if (message.length > 1500) {
+      processedMessage = message.substring(0, 1497) + "...";
+      notification = "Message was trimmed to 1500 characters";
+    }
+
+    // Prompt injection patterns (case-insensitive)
+    const suspiciousPatterns = [
+      /forget.*previous.*instructions?/i,
+      /ignore.*previous.*instructions?/i,
+      /(debug|admin|qa|dev|test)\s*mode/i,
+      /show.*system.*prompt/i,
+      /list.*all.*(data|files|commands)/i,
+      /you.*are.*now.*(assistant|ai|bot)/i,
+      /act.*as.*(different|new)/i,
+      /pretend.*you.*are/i,
+      /role.*play.*as/i,
+      /simulate.*being/i,
+      /bypass.*safety/i,
+      /override.*instructions/i,
+      /jailbreak/i,
+      /system.*instructions/i,
+      /\[.*system.*\]/i,
+      /```.*system/i,
+      /<.*system.*>/i,
+    ];
+
+    for (const pattern of suspiciousPatterns) {
+      if (pattern.test(processedMessage)) {
+        return { 
+          processedMessage: "",
+          notification: "Your message contains patterns that aren't allowed. Please rephrase your question.",
+          isBlocked: true
+        };
+      }
+    }
+
+    return { processedMessage, notification, isBlocked: false };
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSendMessage();
     }
   };
 
+  const handleInputFocus = () => {
+    if (onInputFocus) {
+      onInputFocus();
+    }
+  };
+
   return (
-    <div className="flex flex-col h-full max-w-4xl mx-auto">
+    <div className={cn(
+      "flex flex-col h-full",
+      isFullScreen ? "max-w-none" : "max-w-4xl mx-auto"
+    )}>
       {/* Chat Messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div className={cn(
+        "flex-1 overflow-y-auto space-y-4",
+        isFullScreen ? "p-4 pb-safe" : "p-4"
+      )}>
         {messages.map((message) => (
           <div
             key={message.id}
@@ -160,14 +255,21 @@ const ChatInterface = () => {
       </div>
       
       {/* Input Area */}
-      <div className="border-t bg-background p-4">
+      <div className={cn(
+        "border-t bg-background",
+        isFullScreen ? "p-4 pb-safe" : "p-4"
+      )}>
         <div className="flex gap-2">
-          <Input
+          <AutoGrowTextarea
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            onKeyPress={handleKeyPress}
-            placeholder="Ask GABI anything about Joel's services, background, or expertise..."
-            className="flex-1 text-black"
+            onKeyDown={handleKeyDown}
+            onFocus={handleInputFocus}
+            placeholder={isFullScreen && isMobile ? "Message GABI..." : "Ask GABI anything about Joel's services, background, or expertise..."}
+            className={cn(
+              "flex-1 text-black",
+              isFullScreen && isMobile ? "min-h-[48px]" : ""
+            )}
             disabled={isLoading}
           />
           <Button 
