@@ -10,9 +10,9 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     proxy: {
       '/api': {
-        target: 'http://localhost:3000', // Your joel-ai-interviewer backend
+        target: 'https://gabi-intelligence.vercel.app', // GABI Intelligence v2 backend
         changeOrigin: true,
-        secure: false,
+        secure: true,
         rewrite: (path) => path.replace(/^\/api/, '/api')
       }
     }

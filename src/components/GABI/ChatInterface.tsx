@@ -98,7 +98,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
       }
     ];
 
-    const response = await fetch('https://austin-ai-interviewer.vercel.app/api/chat', {
+    const response = await fetch('https://gabi-intelligence.vercel.app/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 
