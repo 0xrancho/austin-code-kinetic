@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
   import { Button } from '@/components/ui/button';
   import { AutoGrowTextarea } from '@/components/ui/auto-grow-textarea';
   import { Card } from '@/components/ui/card';
-  import { Send, Bot, User, Loader2 } from 'lucide-react';
+  import { Send, Bot, User, Loader2, MessageSquarePlus } from 'lucide-react';
   import { cn } from '@/lib/utils';
   import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -134,8 +134,8 @@ import React, { useState, useRef, useEffect } from 'react';
 
       const data = await response.json();
 
-      // Extract and store sessionId from response (for subsequent messages)
-      if (data.sessionId && !sessionId) {
+      // Always update sessionId from response
+      if (data.sessionId) {
         setSessionId(data.sessionId);
       }
 
