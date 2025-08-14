@@ -51,6 +51,7 @@ import React, { useState, useRef, useEffect } from 'react';
     ]);
     const [inputValue, setInputValue] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const [sessionId, setSessionId] = useState<string | null>(null);
     const messagesEndRef = useRef<HTMLDivElement>(null);
     const isMobile = useIsMobile();
 
@@ -126,11 +127,17 @@ import React, { useState, useRef, useEffect } from 'react';
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          messages: openaiMessages  // Match your API's expected format
+          messages: openaiMessages,
+          sessionId: sessionId  // Send current sessionId (null for first message)
         })
       });
 
       const data = await response.json();
+
+      // Extract and store sessionId from response (for subsequent messages)
+      if (data.sessionId && !sessionId) {
+        setSessionId(data.sessionId);
+      }
 
       const gabiResponse: Message = {
         id: (Date.now() + 1).toString(),
