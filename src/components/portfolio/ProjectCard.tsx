@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
           <img 
             src={project.images[0]} 
             alt={project.title} 
-            className="w-full h-full object-cover" 
+            className="w-full h-full object-cover object-top" 
           />
         ) : (
           <div className="grid grid-cols-2 gap-1 w-full h-full">
@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                 key={index}
                 src={image} 
                 alt={`${project.title} ${index + 1}`} 
-                className="w-full h-full object-cover" 
+                className="w-full h-full object-cover object-top" 
               />
             ))}
           </div>

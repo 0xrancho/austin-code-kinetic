@@ -12,7 +12,67 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 1, 
+    id: 20,
+    title: "GABI",
+    images: ["/portfolio/gabi_portfolio.png"],
+    description: "AI-Powered Qualification Agent",
+    details: "GABI Qualify is an AI-powered qualification agent that transforms static landing pages into intelligent conversation experiences. She engages prospects through natural dialogue, assesses project fit, and books meetings directly into calendar—serving as both a qualification tool and a demonstration of AI capabilities.\n\nKey Features:\n• AI-powered qualification conversations with natural, adaptive dialogue\n• Direct Google Calendar booking integration for qualified prospects\n• Automatic lead capture to Airtable CRM with full conversation context\n• Embeddable widget for any website\n• Multi-factor qualification assessment with strategic routing\n• Edge case intelligence for incomplete information handling\n\nGABI replaces static \"Schedule a Demo\" buttons with sophisticated AI that qualifies strategically, books meetings directly, and demonstrates the AI enablement expertise delivered to clients.",
+    link: "https://joelaustin.xyz/gabi",
+    category: "AI Applications",
+    techStack: ["TypeScript", "Next.js", "Tailwind", "OpenAI", "Airtable", "Google Calendar API", "Vercel"]
+  },
+  {
+    id: 15,
+    title: "Arthur & Archie",
+    images: ["/portfolio/arthur_portfolio.png"],
+    description: "AI Enablement for Professional Services Firms",
+    details: "AI enablement firm helping mid-market consulting companies build revenue systems that scale relationships. Designed SEA framework (survey, enrich, activate), and Trust Positions frameworks for Trust-based growth forecasting that measures relationship health as predictable vectors, plus GTM infrastructure and AI workflows for client delivery and internal operations. Strategy Ops + Design/build website, demo concept, and conversion-funnel.",
+    link: "https://arthurandarchie.com",
+    category: "Web Development / Sales Enablement / AI Enrichment",
+    techStack: ["TypeScript", "Next.js", "Tailwind", "Airtable", "OpenAI", "Clay", "Vercel"]
+  },
+  {
+    id: 16,
+    title: "C12 Indianapolis",
+    images: ["/portfolio/c12_portfolio.png"],
+    description: "Christian CEO Peer Advisory Network",
+    details: "Design/build new website, GTM campaign and enrichment flow, and GEO/SEO strategy for C12's Indianapolis chapter—5 forums serving local Indiana Christian business owners. Complete site restructure for geo-targeting, schema markup, and local search and campaign enrichment.",
+    link: "https://example.com/c12-indianapolis",
+    category: "Web Development / AI Enrichment",
+    techStack: ["TypeScript", "Next.js", "Tailwind", "Notion", "Supabase", "OpenAI", "Vercel"]
+  },
+  {
+    id: 17,
+    title: "SimpleIT / MacExpress",
+    images: ["/portfolio/simpleIT_portfolio.png"],
+    description: "Revenue Data Discovery and Due Diligence",
+    details: "Data discovery and RevOps strategy for 25 years of unused customer data from local IT shop for due diligence and growth strategy. LLM-assisted analysis and intelligence of customer, invoice, and service history files to build segmentation framework, identify enrichment gaps, and create campaign playbooks for growth and winback.",
+    link: "https://example.com/simpleit",
+    category: "AI Enrichment / BI",
+    techStack: ["Python", "SQLite", "Vite", "Claude", "HTML"]
+  },
+  {
+    id: 18,
+    title: "DeepRabbit",
+    images: ["/portfolio/deeprabbit_portfolio.png"],
+    description: "Conversation Intelligence for Consultants",
+    details: "Relationship memory tool that captures meeting transcripts, emails, discovery notes, and voice memos to automatically extract elicitation milestones and relationship health signals for professional services business development teams. Built to solve the \"consultants hate CRM\" problem by making data capture immediately useful to reps—creating voluntary adoption and accurate account intelligence.",
+    link: "https://deeprabbit.xyz",
+    category: "AI Applications",
+    techStack: ["Python", "Flask", "TypeScript", "Next.js", "Tailwind", "Neo4j", "Supabase", "OpenAI", "Claude", "Vercel"]
+  },
+  {
+    id: 19,
+    title: "Dean-austin.org",
+    images: ["/portfolio/deaustin_portfolio.png"],
+    description: "AI-Powered Family Archive",
+    details: "AI-enriched knowledge graph for 7 generations of family history and documents spanning back to Abraham Lincoln's era. Combined graph database for explicit relationships with vector search for semantic queries, orchestrated through LLM to deliver narrative-driven historical deep-dives through my grandfather's perspective.",
+    link: "https://dean-austin.org",
+    category: "AI Applications",
+    techStack: ["TypeScript", "Next.js", "Tailwind", "Neo4j", "Pinecone", "Supabase", "Airtable", "OpenAI", "Claude", "Vercel"]
+  },
+  {
+    id: 1,
     title: "ProofStack", 
     images: ["/lovable-uploads/b17922e1-c5b2-4bb5-ba6f-be14a2469801.png"], 
     description: "Instant Social Proof for Any Outbound Funnel", 
@@ -144,7 +204,7 @@ const projects: Project[] = [
   {
     id: 14,
     title: "ODNB - Operational GTM for Growth-Stage Teams",
-    images: ["https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"],
+    images: ["/portfolio/OldDataNewBus_portfolio.png"],
     description: "Operational GTM for Growth-Stage Teams",
     details: "ODNB - Operational GTM for Growth-Stage Teams\n\nThis project began as a pattern I've been solving my entire career:\n\n\"Our data doesn't talk. If it did, we'd save money or make more of it.\"\n\nFrom Excel lookups to SQL joins, BI tools, C# pipelines to Salesforce flows — this logic has underpinned most of my ops and product work. Enrollment platforms, logistics quote engines, customer win-back systems — all variants of the same core mechanism: match data to surface assumption or problem.\n\nODNB is the evolution of that pattern — rebuilt with RAG architecture and GPT logic.\n\nOriginally designed for mid-level service and SaaS businesses looking to build or optimize their success strategies, ODNB lets you upload historical customer records and current product/service taxonomy. It then segments intelligently based on GTM goal (Winback, Expand, Advocate) and tactic — and generates actionable insight and messaging to engage each segment.\n\nUse Cases\nMid-cycle customer success and account management\n\nRetention and expansion automation for growth-stage orgs\n\nTactical GTM design for under-engaged customer bases\n\nPortfolio companies turning operational data into near-term revenue\n\nTech Stack\nGPT-4o with RAG logic\n\nCSV and Airtable ingestion\n\nStructured prompt stacks for segmentation and outreach scripting\n\nCurrent Stage\nActively piloted by a Success team\n\nLogic tuned for structured SMB data sets (not just survival-mode records)\n\nSegment playbooks aligned to real-world tactics, not theoretical metrics\n\nExploring vertical-specific templates to simplify onboarding and boost accuracy\n\nODNB isn't trying to replace your data warehouse or predict the future — it's trying to show you what's already there, waiting to be activated.\nIt's less about flashy AI — and more about revenue archaeology: helping lean teams find the value they're sitting on, and giving them the GTM motion to act on it before churn, silence, or inertia sets in.",
     link: "https://example.com/odnb",
