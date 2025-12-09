@@ -61,9 +61,19 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           </div>
         )}
         
-        <div className="flex justify-end mt-8">
-          <Button 
-            variant="outline" 
+        <div className="flex justify-end gap-3 mt-8">
+          {project.link && !project.link.includes('example.com') && (
+            <Button
+              className="brand-button"
+              asChild
+            >
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
+            </Button>
+          )}
+          <Button
+            variant="outline"
             className="bg-transparent border border-white/40 hover:bg-white/10"
             onClick={onClose}
           >

@@ -12,6 +12,16 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 21,
+    title: "Prover",
+    images: ["/portfolio/prover_portfolio.png"],
+    description: "Conversational Lead Sourcing Engine",
+    details: "Prover is a conversational business intelligence tool that transforms lead sourcing into an interactive experience. Using your ICP (Ideal Customer Profile) and customer success stories, Prover finds and enriches leads through web search and Apollo API integration.\n\nKey Features:\n• Conversational interface for natural lead discovery and curation\n• Web search integration for real-time company intelligence\n• Apollo API integration for contact enrichment\n• ICP-based lead scoring and matching\n• Bulk export to Airtable for pipeline management\n• Customer success story matching for social proof alignment\n\nCommands: search | enrich | strategize | save\n\nProver turns lead research from a tedious manual process into an intelligent conversation—curate, enrich, and export qualified leads without leaving the chat.",
+    link: "https://example.com/prover",
+    category: "Sales Enablement / AI Applications",
+    techStack: ["Next.js", "React", "Tailwind", "OpenAI", "Apollo API", "Airtable", "Vercel"]
+  },
+  {
     id: 20,
     title: "GABI",
     images: ["/portfolio/gabi_portfolio.png"],
