@@ -47,7 +47,7 @@ const projects: Project[] = [
     images: ["/portfolio/c12_portfolio.png"],
     description: "Christian CEO Peer Advisory Network",
     details: "Design/build new website, GTM campaign and enrichment flow, and GEO/SEO strategy for C12's Indianapolis chapter—5 forums serving local Indiana Christian business owners. Complete site restructure for geo-targeting, schema markup, and local search and campaign enrichment.",
-    link: "https://example.com/c12-indianapolis",
+    link: "https://c12indy.com",
     category: "Web Development / AI Enrichment",
     techStack: ["TypeScript", "Next.js", "Tailwind", "Notion", "Supabase", "OpenAI", "Vercel"]
   },
